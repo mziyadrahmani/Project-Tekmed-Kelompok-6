@@ -1,7 +1,10 @@
-[gd_scene load_steps=3 format=3 uid="uid://bp5rl2ydy7xlw"]
+[gd_scene load_steps=6 format=3 uid="uid://bp5rl2ydy7xlw"]
 
 [ext_resource type="Theme" uid="uid://dgx0l2ofu1ds4" path="res://Mainmenu/maintheme.tres" id="1_oh0t4"]
 [ext_resource type="Texture2D" uid="uid://dfanxl0hhnc1c" path="res://icon.svg" id="2_30lpi"]
+[ext_resource type="Texture2D" uid="uid://obpx6iottl0o" path="res://Mainmenu/logo prj kel6.png" id="3_7eklf"]
+[ext_resource type="Script" path="res://Mainmenu/Pengaturan.gd" id="3_u8hxn"]
+[ext_resource type="PackedScene" uid="uid://faceumod6kuk" path="res://Mainmenu/Settings/Settings.tscn" id="4_8gd1m"]
 
 [node name="Control" type="Control"]
 layout_mode = 3
@@ -22,16 +25,18 @@ color = Color(0.529412, 0.776471, 0.662745, 1)
 
 [node name="Main" type="Control" parent="."]
 anchors_preset = 0
-offset_left = 901.0
-offset_top = 158.0
-offset_right = 941.0
-offset_bottom = 198.0
+offset_left = 897.0
+offset_top = 260.0
+offset_right = 937.0
+offset_bottom = 300.0
 
 [node name="Button" type="Button" parent="Main"]
 layout_mode = 0
-offset_right = 136.0
-offset_bottom = 136.0
-scale = Vector2(1.32744, 1.32744)
+offset_left = -33.0
+offset_top = -57.0
+offset_right = 103.0
+offset_bottom = 79.0
+scale = Vector2(1.77352, 1.77352)
 theme = ExtResource("1_oh0t4")
 icon = ExtResource("2_30lpi")
 flat = true
@@ -47,25 +52,97 @@ text = "Main"
 
 [node name="Tentang" type="Control" parent="."]
 anchors_preset = 0
-offset_left = 901.0
-offset_top = 158.0
-offset_right = 941.0
-offset_bottom = 198.0
+offset_left = 1129.0
+offset_top = 17.0
+offset_right = 1169.0
+offset_bottom = 57.0
 
 [node name="Button" type="Button" parent="Tentang"]
 layout_mode = 0
 offset_right = 136.0
 offset_bottom = 136.0
-scale = Vector2(1.32744, 1.32744)
+scale = Vector2(0.923004, 0.923004)
 theme = ExtResource("1_oh0t4")
 icon = ExtResource("2_30lpi")
 flat = true
 
 [node name="Label" type="Label" parent="Tentang"]
 layout_mode = 0
-offset_left = 53.0
-offset_top = 176.0
-offset_right = 122.0
-offset_bottom = 230.0
+offset_left = -4.0
+offset_top = 118.0
+offset_right = 132.0
+offset_bottom = 172.0
 theme = ExtResource("1_oh0t4")
-text = "Main"
+text = "Tentang"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Keluar" type="Control" parent="."]
+anchors_preset = 0
+offset_left = 1034.0
+offset_top = 519.0
+offset_right = 1074.0
+offset_bottom = 559.0
+
+[node name="Button" type="Button" parent="Keluar"]
+layout_mode = 0
+offset_right = 136.0
+offset_bottom = 136.0
+scale = Vector2(0.923004, 0.923004)
+theme = ExtResource("1_oh0t4")
+icon = ExtResource("2_30lpi")
+flat = true
+
+[node name="Label" type="Label" parent="Keluar"]
+layout_mode = 0
+offset_left = -4.0
+offset_top = 118.0
+offset_right = 132.0
+offset_bottom = 172.0
+theme = ExtResource("1_oh0t4")
+text = "Keluar"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Pengaturan" type="Control" parent="."]
+anchors_preset = 0
+offset_left = 805.0
+offset_top = 516.0
+offset_right = 845.0
+offset_bottom = 556.0
+script = ExtResource("3_u8hxn")
+
+[node name="Button" type="Button" parent="Pengaturan"]
+layout_mode = 0
+offset_right = 136.0
+offset_bottom = 136.0
+scale = Vector2(0.923004, 0.923004)
+theme = ExtResource("1_oh0t4")
+icon = ExtResource("2_30lpi")
+flat = true
+
+[node name="Label" type="Label" parent="Pengaturan"]
+layout_mode = 0
+offset_left = -31.0
+offset_top = 117.0
+offset_right = 152.0
+offset_bottom = 171.0
+theme = ExtResource("1_oh0t4")
+text = "Pengaturan"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Settings" parent="Pengaturan" instance=ExtResource("4_8gd1m")]
+visible = false
+top_level = true
+layout_mode = 1
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = 53.0
+offset_top = 48.0
+offset_right = 651.0
+offset_bottom = 326.0
+texture = ExtResource("3_7eklf")
+
+[connection signal="button_up" from="Pengaturan/Button" to="Pengaturan" method="_on_button_button_up"]

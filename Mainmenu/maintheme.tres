@@ -1,0 +1,9 @@
+[gd_resource type="Theme" load_steps=2 format=3 uid="uid://dgx0l2ofu1ds4"]
+
+[ext_resource type="FontFile" uid="uid://kmkrqsu38n0f" path="res://Mainmenu/BradBunR.ttf" id="1_r8ohg"]
+
+[resource]
+default_font = ExtResource("1_r8ohg")
+Button/font_sizes/font_size = 45
+Label/colors/font_shadow_color = Color(0, 0, 0, 1)
+Label/font_sizes/font_size = 45

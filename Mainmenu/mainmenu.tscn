@@ -1,0 +1,71 @@
+[gd_scene load_steps=3 format=3 uid="uid://bp5rl2ydy7xlw"]
+
+[ext_resource type="Theme" uid="uid://dgx0l2ofu1ds4" path="res://Mainmenu/maintheme.tres" id="1_oh0t4"]
+[ext_resource type="Texture2D" uid="uid://dfanxl0hhnc1c" path="res://icon.svg" id="2_30lpi"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 0
+offset_left = -502.0
+offset_top = -191.0
+offset_right = 1994.0
+offset_bottom = 911.0
+color = Color(0.529412, 0.776471, 0.662745, 1)
+
+[node name="Main" type="Control" parent="."]
+anchors_preset = 0
+offset_left = 901.0
+offset_top = 158.0
+offset_right = 941.0
+offset_bottom = 198.0
+
+[node name="Button" type="Button" parent="Main"]
+layout_mode = 0
+offset_right = 136.0
+offset_bottom = 136.0
+scale = Vector2(1.32744, 1.32744)
+theme = ExtResource("1_oh0t4")
+icon = ExtResource("2_30lpi")
+flat = true
+
+[node name="Label" type="Label" parent="Main"]
+layout_mode = 0
+offset_left = 53.0
+offset_top = 176.0
+offset_right = 122.0
+offset_bottom = 230.0
+theme = ExtResource("1_oh0t4")
+text = "Main"
+
+[node name="Tentang" type="Control" parent="."]
+anchors_preset = 0
+offset_left = 901.0
+offset_top = 158.0
+offset_right = 941.0
+offset_bottom = 198.0
+
+[node name="Button" type="Button" parent="Tentang"]
+layout_mode = 0
+offset_right = 136.0
+offset_bottom = 136.0
+scale = Vector2(1.32744, 1.32744)
+theme = ExtResource("1_oh0t4")
+icon = ExtResource("2_30lpi")
+flat = true
+
+[node name="Label" type="Label" parent="Tentang"]
+layout_mode = 0
+offset_left = 53.0
+offset_top = 176.0
+offset_right = 122.0
+offset_bottom = 230.0
+theme = ExtResource("1_oh0t4")
+text = "Main"

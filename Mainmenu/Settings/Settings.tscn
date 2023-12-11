@@ -13,6 +13,7 @@ grow_vertical = 2
 script = ExtResource("1_8tpsr")
 
 [node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 0
 offset_left = -502.0
 offset_top = -191.0
 offset_right = 1994.0
@@ -32,6 +33,7 @@ grow_horizontal = 2
 theme = ExtResource("1_ubafa")
 theme_override_font_sizes/font_size = 71
 text = "Pengaturan"
+horizontal_alignment = 1
 
 [node name="VBoxContainer" type="VBoxContainer" parent="."]
 layout_mode = 1

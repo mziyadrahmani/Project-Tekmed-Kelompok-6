@@ -1,0 +1,73 @@
+[gd_scene load_steps=14 format=3 uid="uid://bmthyn5riwkjx"]
+
+[ext_resource type="Texture2D" uid="uid://dmquya788bbp7" path="res://Transition/transcat/Composition 1.00001.png" id="1_er6ty"]
+[ext_resource type="Script" path="res://Transition/transcat/transition.gd" id="1_s7uex"]
+[ext_resource type="Texture2D" uid="uid://umdgnct7kts4" path="res://Transition/transcat/Composition 1.00002.png" id="2_n34o6"]
+[ext_resource type="Texture2D" uid="uid://ct1qyiayh8ylv" path="res://Transition/transcat/Composition 1.00003.png" id="3_sioms"]
+[ext_resource type="Texture2D" uid="uid://4c2vklswanqr" path="res://Transition/transcat/Composition 1.00004.png" id="4_q2mum"]
+[ext_resource type="Texture2D" uid="uid://deal7n378qdy1" path="res://Transition/transcat/Composition 1.00005.png" id="5_8u0xk"]
+[ext_resource type="Texture2D" uid="uid://cucry7u2hdlbv" path="res://Transition/transcat/Composition 1.00006.png" id="6_1mlb6"]
+[ext_resource type="Texture2D" uid="uid://bkdl2tn6hov1y" path="res://Transition/transcat/Composition 1.00007.png" id="7_8r5ik"]
+[ext_resource type="Texture2D" uid="uid://vg7g0gq4yoii" path="res://Transition/transcat/Composition 1.00008.png" id="8_1ewui"]
+[ext_resource type="Texture2D" uid="uid://c8amvp7xnupto" path="res://Transition/transcat/Composition 1.00009.png" id="9_el4us"]
+[ext_resource type="Texture2D" uid="uid://bv612fp07mc4o" path="res://Transition/transcat/Composition 1.00010.png" id="10_u541t"]
+[ext_resource type="Texture2D" uid="uid://cywcc8l5g18lc" path="res://Transition/transcat/Composition 1.00011.png" id="11_7k1wg"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_djw4t"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_er6ty")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_n34o6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_sioms")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_q2mum")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_8u0xk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_1mlb6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_8r5ik")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_1ewui")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_el4us")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_u541t")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_7k1wg")
+}],
+"loop": true,
+"name": &"default",
+"speed": 12.0
+}]
+
+[node name="Transition" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+script = ExtResource("1_s7uex")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(644, 355)
+scale = Vector2(1.0375, 1.06389)
+sprite_frames = SubResource("SpriteFrames_djw4t")
+frame_progress = 0.605991
+
+[connection signal="animation_finished" from="AnimatedSprite2D" to="." method="_on_animated_sprite_2d_animation_finished"]

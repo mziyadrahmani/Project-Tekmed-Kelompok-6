@@ -1,10 +1,72 @@
-[gd_scene load_steps=6 format=3 uid="uid://bp5rl2ydy7xlw"]
+[gd_scene load_steps=22 format=3 uid="uid://bp5rl2ydy7xlw"]
 
 [ext_resource type="Theme" uid="uid://dgx0l2ofu1ds4" path="res://Mainmenu/maintheme.tres" id="1_oh0t4"]
 [ext_resource type="Texture2D" uid="uid://dfanxl0hhnc1c" path="res://icon.svg" id="2_30lpi"]
+[ext_resource type="Script" path="res://Mainmenu/Tentang.gd" id="3_1gob1"]
 [ext_resource type="Texture2D" uid="uid://obpx6iottl0o" path="res://Mainmenu/logo prj kel6.png" id="3_7eklf"]
 [ext_resource type="Script" path="res://Mainmenu/Pengaturan.gd" id="3_u8hxn"]
 [ext_resource type="PackedScene" uid="uid://faceumod6kuk" path="res://Mainmenu/Settings/Settings.tscn" id="4_8gd1m"]
+[ext_resource type="PackedScene" uid="uid://bpvse0y6g2f1o" path="res://Mainmenu/Tentang/Tentang.tscn" id="4_qso4j"]
+[ext_resource type="Texture2D" uid="uid://dibeyhhp45x4d" path="res://Transition/transcat/Composition 1.00000.png" id="8_r21yi"]
+[ext_resource type="Texture2D" uid="uid://dmquya788bbp7" path="res://Transition/transcat/Composition 1.00001.png" id="9_n3cf0"]
+[ext_resource type="Texture2D" uid="uid://umdgnct7kts4" path="res://Transition/transcat/Composition 1.00002.png" id="10_xhlqx"]
+[ext_resource type="Texture2D" uid="uid://ct1qyiayh8ylv" path="res://Transition/transcat/Composition 1.00003.png" id="11_0rp58"]
+[ext_resource type="Texture2D" uid="uid://4c2vklswanqr" path="res://Transition/transcat/Composition 1.00004.png" id="12_77r67"]
+[ext_resource type="Texture2D" uid="uid://deal7n378qdy1" path="res://Transition/transcat/Composition 1.00005.png" id="13_h5kge"]
+[ext_resource type="Texture2D" uid="uid://cucry7u2hdlbv" path="res://Transition/transcat/Composition 1.00006.png" id="14_pucfn"]
+[ext_resource type="Texture2D" uid="uid://bkdl2tn6hov1y" path="res://Transition/transcat/Composition 1.00007.png" id="15_xqeek"]
+[ext_resource type="Texture2D" uid="uid://vg7g0gq4yoii" path="res://Transition/transcat/Composition 1.00008.png" id="16_mp6ve"]
+[ext_resource type="Texture2D" uid="uid://c8amvp7xnupto" path="res://Transition/transcat/Composition 1.00009.png" id="17_77m8f"]
+[ext_resource type="Texture2D" uid="uid://bv612fp07mc4o" path="res://Transition/transcat/Composition 1.00010.png" id="18_cjrla"]
+[ext_resource type="Texture2D" uid="uid://cywcc8l5g18lc" path="res://Transition/transcat/Composition 1.00011.png" id="19_us1k0"]
+[ext_resource type="Texture2D" uid="uid://dojojbhg3hoav" path="res://Transition/transcat/Composition 1.00012.png" id="20_6svor"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_kqui3"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("8_r21yi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_n3cf0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_xhlqx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_0rp58")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_77r67")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_h5kge")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_pucfn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_xqeek")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_mp6ve")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_77m8f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_cjrla")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_us1k0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_6svor")
+}],
+"loop": false,
+"name": &"default",
+"speed": 12.0
+}]
 
 [node name="Control" type="Control"]
 layout_mode = 3
@@ -50,23 +112,26 @@ offset_bottom = 230.0
 theme = ExtResource("1_oh0t4")
 text = "Main"
 
-[node name="Tentang" type="Control" parent="."]
+[node name="Exclamation" type="Control" parent="."]
 anchors_preset = 0
 offset_left = 1129.0
 offset_top = 17.0
 offset_right = 1169.0
 offset_bottom = 57.0
+script = ExtResource("3_1gob1")
 
-[node name="Button" type="Button" parent="Tentang"]
+[node name="Button" type="Button" parent="Exclamation"]
 layout_mode = 0
-offset_right = 136.0
-offset_bottom = 136.0
+offset_left = 7.0
+offset_top = -1.0
+offset_right = 143.0
+offset_bottom = 135.0
 scale = Vector2(0.923004, 0.923004)
 theme = ExtResource("1_oh0t4")
 icon = ExtResource("2_30lpi")
 flat = true
 
-[node name="Label" type="Label" parent="Tentang"]
+[node name="Label" type="Label" parent="Exclamation"]
 layout_mode = 0
 offset_left = -4.0
 offset_top = 118.0
@@ -76,6 +141,16 @@ theme = ExtResource("1_oh0t4")
 text = "Tentang"
 horizontal_alignment = 1
 vertical_alignment = 1
+
+[node name="Tentang" parent="Exclamation" instance=ExtResource("4_qso4j")]
+visible = false
+top_level = true
+layout_mode = 1
+anchors_preset = 13
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -642.0
+offset_right = 638.0
 
 [node name="Keluar" type="Control" parent="."]
 anchors_preset = 0
@@ -145,4 +220,11 @@ offset_right = 651.0
 offset_bottom = 326.0
 texture = ExtResource("3_7eklf")
 
+[node name="Transition" type="AnimatedSprite2D" parent="."]
+top_level = true
+position = Vector2(644, 355)
+scale = Vector2(1.0375, 1.06389)
+sprite_frames = SubResource("SpriteFrames_kqui3")
+
+[connection signal="button_up" from="Exclamation/Button" to="Exclamation" method="_on_button_button_up"]
 [connection signal="button_up" from="Pengaturan/Button" to="Pengaturan" method="_on_button_button_up"]

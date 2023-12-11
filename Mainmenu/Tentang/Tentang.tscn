@@ -1,0 +1,92 @@
+[gd_scene load_steps=5 format=3 uid="uid://bpvse0y6g2f1o"]
+
+[ext_resource type="Script" path="res://Mainmenu/Tentang/Tentang.gd" id="1_eranu"]
+[ext_resource type="Theme" uid="uid://dgx0l2ofu1ds4" path="res://Mainmenu/maintheme.tres" id="1_frndp"]
+[ext_resource type="Texture2D" uid="uid://cditn3x4vjvm1" path="res://Mainmenu/kel6 logo.png" id="3_xqy0q"]
+[ext_resource type="Texture2D" uid="uid://x61ojgcxu47h" path="res://Icons/logo_vertical_monochrome_dark.png" id="4_x5xry"]
+
+[node name="Tentang" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_eranu")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 0
+offset_left = -1811.0
+offset_top = -707.0
+offset_right = 3045.0
+offset_bottom = 1575.0
+color = Color(0.854902, 0.619608, 0.854902, 1)
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -145.0
+offset_top = 28.0
+offset_right = 145.0
+offset_bottom = 113.0
+grow_horizontal = 2
+theme = ExtResource("1_frndp")
+theme_override_font_sizes/font_size = 71
+text = "Tentang"
+horizontal_alignment = 1
+
+[node name="Kembali" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -82.5
+offset_top = 232.0
+offset_right = 82.5
+offset_bottom = 311.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("1_frndp")
+theme_override_font_sizes/font_size = 59
+text = "Kembali"
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 2
+offset_left = 132.0
+offset_top = 119.0
+offset_right = 632.0
+offset_bottom = 619.0
+scale = Vector2(0.4758, 0.4758)
+size_flags_horizontal = 4
+texture = ExtResource("3_xqy0q")
+
+[node name="TextureRect2" type="TextureRect" parent="."]
+layout_mode = 2
+offset_left = 167.0
+offset_top = 367.0
+offset_right = 1191.0
+offset_bottom = 1538.0
+scale = Vector2(0.162593, 0.162593)
+texture = ExtResource("4_x5xry")
+
+[node name="Label2" type="Label" parent="."]
+layout_mode = 1
+offset_left = 438.0
+offset_top = 146.0
+offset_right = 1128.0
+offset_bottom = 542.0
+theme = ExtResource("1_frndp")
+text = "Anggota Kelompok
+
+Muhammad Amin
+Khairia Putri
+Ummi Rodhiah Saputri
+M. Ziyad Rahmani
+Haikal Ahmad"
+horizontal_alignment = 2
+
+[connection signal="button_up" from="Kembali" to="." method="_on_kembali_button_up"]

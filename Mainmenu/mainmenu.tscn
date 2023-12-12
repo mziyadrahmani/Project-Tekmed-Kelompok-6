@@ -95,7 +95,7 @@ offset_left = -502.0
 offset_top = -191.0
 offset_right = 1994.0
 offset_bottom = 911.0
-color = Color(0.92549, 0.92549, 0.968627, 1)
+color = Color(0.835294, 0.952941, 1, 1)
 
 [node name="Main" type="Control" parent="."]
 anchors_preset = 0
@@ -263,6 +263,7 @@ bus = &"Music"
 [node name="Pop" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("31_5fana")
 volume_db = 4.685
+bus = &"SFX"
 
 [connection signal="button_up" from="Main/Button" to="Main" method="_on_button_button_up"]
 [connection signal="button_up" from="Exclamation/Button" to="Exclamation" method="_on_button_button_up"]

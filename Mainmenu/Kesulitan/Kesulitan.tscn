@@ -22,7 +22,7 @@ offset_left = -502.0
 offset_top = -191.0
 offset_right = 1994.0
 offset_bottom = 911.0
-color = Color(0.85098, 0.87451, 0.909804, 1)
+color = Color(0.72549, 0.937255, 0.72549, 1)
 
 [node name="Label" type="Label" parent="."]
 layout_mode = 1
@@ -76,6 +76,7 @@ position = Vector2(1039, 362)
 texture = ExtResource("5_x760p")
 
 [node name="Label2" type="Label" parent="."]
+layout_mode = 0
 offset_left = 192.0
 offset_top = 450.0
 offset_right = 284.0
@@ -84,6 +85,7 @@ theme = ExtResource("2_01dnk")
 text = "Mudah"
 
 [node name="Label3" type="Label" parent="."]
+layout_mode = 0
 offset_left = 433.0
 offset_top = 450.0
 offset_right = 572.0
@@ -93,6 +95,7 @@ text = "Terkunci"
 horizontal_alignment = 1
 
 [node name="Label4" type="Label" parent="."]
+layout_mode = 0
 offset_left = 699.0
 offset_top = 450.0
 offset_right = 838.0
@@ -102,6 +105,7 @@ text = "Terkunci"
 horizontal_alignment = 1
 
 [node name="Label5" type="Label" parent="."]
+layout_mode = 0
 offset_left = 968.0
 offset_top = 450.0
 offset_right = 1107.0

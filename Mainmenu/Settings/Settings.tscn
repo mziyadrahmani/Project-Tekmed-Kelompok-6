@@ -56,7 +56,7 @@ theme = ExtResource("1_ubafa")
 theme_override_font_sizes/font_size = 71
 text = "Musik"
 
-[node name="CheckButton" type="CheckButton" parent="VBoxContainer/Label2"]
+[node name="Music" type="CheckButton" parent="VBoxContainer/Label2"]
 layout_mode = 1
 anchors_preset = 6
 anchor_left = 1.0
@@ -80,7 +80,7 @@ theme_override_font_sizes/font_size = 71
 text = "Efek Suara
 "
 
-[node name="CheckButton2" type="CheckButton" parent="VBoxContainer/Label3"]
+[node name="SFX" type="CheckButton" parent="VBoxContainer/Label3"]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -113,4 +113,6 @@ grow_vertical = 2
 theme = ExtResource("3_nv44d")
 theme_override_font_sizes/font_size = 59
 
+[connection signal="toggled" from="VBoxContainer/Label2/Music" to="." method="_on_music_toggled"]
+[connection signal="toggled" from="VBoxContainer/Label3/SFX" to="." method="_on_sfx_toggled"]
 [connection signal="button_up" from="Kembali" to="." method="_on_kembali_button_up"]

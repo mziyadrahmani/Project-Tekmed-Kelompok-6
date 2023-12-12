@@ -8,7 +8,7 @@ func _ready():
 	$BGM.play()
 
 func _input(_event):
-	if Input.is_anything_pressed() :
+	if Input.is_mouse_button_pressed(MOUSE_BUTTON_LEFT) :
 		$Pop.play()
 
 

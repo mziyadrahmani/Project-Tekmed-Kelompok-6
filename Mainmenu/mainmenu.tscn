@@ -1,17 +1,24 @@
-[gd_scene load_steps=24 format=3 uid="uid://bp5rl2ydy7xlw"]
+[gd_scene load_steps=33 format=3 uid="uid://bp5rl2ydy7xlw"]
 
 [ext_resource type="Script" path="res://Mainmenu/mainmenu.gd" id="1_7kx3k"]
 [ext_resource type="Theme" uid="uid://dgx0l2ofu1ds4" path="res://Mainmenu/maintheme.tres" id="1_oh0t4"]
-[ext_resource type="Texture2D" uid="uid://dfanxl0hhnc1c" path="res://icon.svg" id="2_30lpi"]
+[ext_resource type="Script" path="res://Mainmenu/Main.gd" id="2_apn7a"]
+[ext_resource type="Theme" uid="uid://bfmn1xxp3rooc" path="res://UI/UI/Play Button/Play.tres" id="2_fenon"]
 [ext_resource type="Script" path="res://Mainmenu/Tentang.gd" id="3_1gob1"]
 [ext_resource type="Texture2D" uid="uid://obpx6iottl0o" path="res://Mainmenu/logo prj kel6.png" id="3_7eklf"]
 [ext_resource type="Script" path="res://Mainmenu/Pengaturan.gd" id="3_u8hxn"]
 [ext_resource type="PackedScene" uid="uid://faceumod6kuk" path="res://Mainmenu/Settings/Settings.tscn" id="4_8gd1m"]
 [ext_resource type="PackedScene" uid="uid://bpvse0y6g2f1o" path="res://Mainmenu/Tentang/Tentang.tscn" id="4_qso4j"]
+[ext_resource type="PackedScene" uid="uid://deh4se38jgykr" path="res://Mainmenu/Kesulitan/Kesulitan.tscn" id="5_qjsur"]
+[ext_resource type="Theme" uid="uid://sk5dx53pbpu8" path="res://UI/UI/About Button/About.tres" id="5_vqi3e"]
+[ext_resource type="Script" path="res://Mainmenu/Keluar.gd" id="7_e2e6t"]
+[ext_resource type="Theme" uid="uid://cfoijy4sgebdx" path="res://UI/UI/Quit Button/Quit.tres" id="7_y5opp"]
 [ext_resource type="Texture2D" uid="uid://dibeyhhp45x4d" path="res://Transition/transcat/Composition 1.00000.png" id="8_r21yi"]
 [ext_resource type="Texture2D" uid="uid://dmquya788bbp7" path="res://Transition/transcat/Composition 1.00001.png" id="9_n3cf0"]
+[ext_resource type="Theme" uid="uid://b00n6uwpuxcwq" path="res://UI/UI/Settings Button/Settings.tres" id="9_p6isp"]
 [ext_resource type="Texture2D" uid="uid://umdgnct7kts4" path="res://Transition/transcat/Composition 1.00002.png" id="10_xhlqx"]
 [ext_resource type="Texture2D" uid="uid://ct1qyiayh8ylv" path="res://Transition/transcat/Composition 1.00003.png" id="11_0rp58"]
+[ext_resource type="Texture2D" uid="uid://3flibqndfdr3" path="res://Game Objects/fox.svg" id="11_r4cvb"]
 [ext_resource type="Texture2D" uid="uid://4c2vklswanqr" path="res://Transition/transcat/Composition 1.00004.png" id="12_77r67"]
 [ext_resource type="Texture2D" uid="uid://deal7n378qdy1" path="res://Transition/transcat/Composition 1.00005.png" id="13_h5kge"]
 [ext_resource type="Texture2D" uid="uid://cucry7u2hdlbv" path="res://Transition/transcat/Composition 1.00006.png" id="14_pucfn"]
@@ -22,6 +29,8 @@
 [ext_resource type="Texture2D" uid="uid://cywcc8l5g18lc" path="res://Transition/transcat/Composition 1.00011.png" id="19_us1k0"]
 [ext_resource type="Texture2D" uid="uid://dojojbhg3hoav" path="res://Transition/transcat/Composition 1.00012.png" id="20_6svor"]
 [ext_resource type="Script" path="res://Mainmenu/Transition.gd" id="22_lsp0v"]
+[ext_resource type="AudioStream" uid="uid://cb06kujfvw2i0" path="res://Audio/jazzcomedy.mp3" id="30_7a5u6"]
+[ext_resource type="AudioStream" uid="uid://cjw3ex0jgtfrb" path="res://Audio/Pop 1.ogg" id="31_5fana"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_kqui3"]
 animations = [{
@@ -86,7 +95,7 @@ offset_left = -502.0
 offset_top = -191.0
 offset_right = 1994.0
 offset_bottom = 911.0
-color = Color(0.529412, 0.776471, 0.662745, 1)
+color = Color(0.92549, 0.92549, 0.968627, 1)
 
 [node name="Main" type="Control" parent="."]
 anchors_preset = 0
@@ -94,6 +103,7 @@ offset_left = 897.0
 offset_top = 260.0
 offset_right = 937.0
 offset_bottom = 300.0
+script = ExtResource("2_apn7a")
 
 [node name="Button" type="Button" parent="Main"]
 layout_mode = 0
@@ -102,9 +112,7 @@ offset_top = -57.0
 offset_right = 103.0
 offset_bottom = 79.0
 scale = Vector2(1.77352, 1.77352)
-theme = ExtResource("1_oh0t4")
-icon = ExtResource("2_30lpi")
-flat = true
+theme = ExtResource("2_fenon")
 
 [node name="Label" type="Label" parent="Main"]
 layout_mode = 0
@@ -115,24 +123,29 @@ offset_bottom = 230.0
 theme = ExtResource("1_oh0t4")
 text = "Main"
 
+[node name="Kesulitan" parent="Main" instance=ExtResource("5_qjsur")]
+visible = false
+top_level = true
+visibility_layer = 2
+layout_mode = 1
+
 [node name="Exclamation" type="Control" parent="."]
 anchors_preset = 0
 offset_left = 1129.0
 offset_top = 17.0
 offset_right = 1169.0
 offset_bottom = 57.0
+pivot_offset = Vector2(-445, 21)
 script = ExtResource("3_1gob1")
 
 [node name="Button" type="Button" parent="Exclamation"]
 layout_mode = 0
-offset_left = 7.0
-offset_top = -1.0
-offset_right = 143.0
-offset_bottom = 135.0
+offset_left = 40.0
+offset_top = 19.0
+offset_right = 87.0
+offset_bottom = 117.0
 scale = Vector2(0.923004, 0.923004)
-theme = ExtResource("1_oh0t4")
-icon = ExtResource("2_30lpi")
-flat = true
+theme = ExtResource("5_vqi3e")
 
 [node name="Label" type="Label" parent="Exclamation"]
 layout_mode = 0
@@ -148,28 +161,30 @@ vertical_alignment = 1
 [node name="Tentang" parent="Exclamation" instance=ExtResource("4_qso4j")]
 visible = false
 top_level = true
+visibility_layer = 2
 layout_mode = 1
 anchors_preset = 13
 anchor_left = 0.5
 anchor_right = 0.5
-offset_left = -642.0
-offset_right = 638.0
+offset_left = -640.0
+offset_right = 640.0
 
 [node name="Keluar" type="Control" parent="."]
 anchors_preset = 0
-offset_left = 1034.0
-offset_top = 519.0
-offset_right = 1074.0
-offset_bottom = 559.0
+offset_left = 1055.0
+offset_top = 515.0
+offset_right = 1095.0
+offset_bottom = 555.0
+script = ExtResource("7_e2e6t")
 
 [node name="Button" type="Button" parent="Keluar"]
 layout_mode = 0
-offset_right = 136.0
-offset_bottom = 136.0
+offset_left = 8.0
+offset_top = 11.0
+offset_right = 128.0
+offset_bottom = 123.0
 scale = Vector2(0.923004, 0.923004)
-theme = ExtResource("1_oh0t4")
-icon = ExtResource("2_30lpi")
-flat = true
+theme = ExtResource("7_y5opp")
 
 [node name="Label" type="Label" parent="Keluar"]
 layout_mode = 0
@@ -192,12 +207,12 @@ script = ExtResource("3_u8hxn")
 
 [node name="Button" type="Button" parent="Pengaturan"]
 layout_mode = 0
-offset_right = 136.0
-offset_bottom = 136.0
+offset_left = 12.0
+offset_top = 12.0
+offset_right = 123.0
+offset_bottom = 123.0
 scale = Vector2(0.923004, 0.923004)
-theme = ExtResource("1_oh0t4")
-icon = ExtResource("2_30lpi")
-flat = true
+theme = ExtResource("9_p6isp")
 
 [node name="Label" type="Label" parent="Pengaturan"]
 layout_mode = 0
@@ -213,6 +228,7 @@ vertical_alignment = 1
 [node name="Settings" parent="Pengaturan" instance=ExtResource("4_8gd1m")]
 visible = false
 top_level = true
+visibility_layer = 2
 layout_mode = 1
 
 [node name="TextureRect" type="TextureRect" parent="."]
@@ -223,15 +239,34 @@ offset_right = 651.0
 offset_bottom = 326.0
 texture = ExtResource("3_7eklf")
 
+[node name="TextureRect2" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = 212.0
+offset_top = 337.0
+offset_right = 512.0
+offset_bottom = 637.0
+texture = ExtResource("11_r4cvb")
+
 [node name="Transition" type="AnimatedSprite2D" parent="."]
 top_level = true
-position = Vector2(644, 355)
+position = Vector2(665, 356)
 scale = Vector2(1.0375, 1.06389)
 sprite_frames = SubResource("SpriteFrames_kqui3")
 frame = 12
 frame_progress = 1.0
 script = ExtResource("22_lsp0v")
 
+[node name="BGM" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("30_7a5u6")
+bus = &"Music"
+
+[node name="Pop" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("31_5fana")
+volume_db = 4.685
+
+[connection signal="button_up" from="Main/Button" to="Main" method="_on_button_button_up"]
 [connection signal="button_up" from="Exclamation/Button" to="Exclamation" method="_on_button_button_up"]
+[connection signal="button_up" from="Keluar/Button" to="Keluar" method="_on_button_button_up"]
 [connection signal="button_up" from="Pengaturan/Button" to="Pengaturan" method="_on_button_button_up"]
 [connection signal="animation_finished" from="Transition" to="Transition" method="_on_animation_finished"]
+[connection signal="finished" from="BGM" to="." method="_on_audio_stream_player_finished"]

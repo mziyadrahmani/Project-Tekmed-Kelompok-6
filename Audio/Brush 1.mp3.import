@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dk4msegbqs1un"
+path="res://.godot/imported/Brush 1.mp3-8c41aa3d8d846d59debf208184b66789.mp3str"
+
+[deps]
+
+source_file="res://Audio/Brush 1.mp3"
+dest_files=["res://.godot/imported/Brush 1.mp3-8c41aa3d8d846d59debf208184b66789.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,10 +1,11 @@
-[gd_scene load_steps=6 format=3 uid="uid://bm4mdupayp5nd"]
+[gd_scene load_steps=7 format=3 uid="uid://bm4mdupayp5nd"]
 
-[ext_resource type="Script" path="res://Mainmenu/Settings/Settings.gd" id="1_8csta"]
+[ext_resource type="Script" path="res://Mainmenu/Level/LevelEasy.gd" id="1_o5j11"]
 [ext_resource type="Theme" uid="uid://dgx0l2ofu1ds4" path="res://Mainmenu/maintheme.tres" id="2_v3ink"]
 [ext_resource type="Theme" uid="uid://obiv5qeqsjsa" path="res://UI/UI/Back Button/Back.tres" id="3_dmjo1"]
 [ext_resource type="Theme" uid="uid://dwgjjeve38bae" path="res://UI/UI/Diff Easy/Easy.tres" id="4_rsqx5"]
 [ext_resource type="Theme" uid="uid://csfri0e7sboc0" path="res://UI/UI/Level Button/LevelUnfinished.tres" id="5_sohen"]
+[ext_resource type="PackedScene" uid="uid://bse8o2mkl2fu3" path="res://UI/Loading.tscn" id="6_y55wa"]
 
 [node name="LevelEasy" type="Control"]
 layout_mode = 3
@@ -13,7 +14,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-script = ExtResource("1_8csta")
+script = ExtResource("1_o5j11")
 
 [node name="ColorRect" type="ColorRect" parent="."]
 layout_mode = 0
@@ -83,7 +84,7 @@ columns = 5
 [node name="Control" type="Control" parent="GridContainer"]
 layout_mode = 2
 
-[node name="Button2" type="Button" parent="GridContainer/Control"]
+[node name="Level1" type="Button" parent="GridContainer/Control"]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -224,4 +225,9 @@ offset_bottom = 316.0
 theme = ExtResource("2_v3ink")
 text = "5"
 
+[node name="Loading" parent="." instance=ExtResource("6_y55wa")]
+visible = false
+layout_mode = 1
+
 [connection signal="button_up" from="Kembali" to="." method="_on_kembali_button_up"]
+[connection signal="button_up" from="GridContainer/Control/Level1" to="." method="_on_level_1_button_up"]

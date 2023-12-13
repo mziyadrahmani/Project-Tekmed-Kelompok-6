@@ -1,7 +1,8 @@
-[gd_scene load_steps=7 format=3 uid="uid://boocl8mmw1yxp"]
+[gd_scene load_steps=8 format=3 uid="uid://boocl8mmw1yxp"]
 
 [ext_resource type="Script" path="res://Mainmenu/splash.gd" id="1_clv43"]
 [ext_resource type="Texture2D" uid="uid://cditn3x4vjvm1" path="res://Mainmenu/kel6 logo.png" id="2_3rdvk"]
+[ext_resource type="AudioStream" uid="uid://b8gmpqsv4oqny" path="res://Audio/sweet-transition-153787.mp3" id="3_l78ib"]
 
 [sub_resource type="Animation" id="Animation_h1knn"]
 resource_name = "FadeIn"
@@ -104,3 +105,7 @@ color = Color(0, 0, 0, 1)
 libraries = {
 "": SubResource("AnimationLibrary_2h8dp")
 }
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_l78ib")
+autoplay = true

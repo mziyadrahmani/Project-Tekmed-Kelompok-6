@@ -1,0 +1,66 @@
+[gd_scene load_steps=11 format=3 uid="uid://mcl6lrd0bg34"]
+
+[ext_resource type="Texture2D" uid="uid://chn3qaohbvlem" path="res://Game Objects/fox/Vector Layer.PNG" id="1_4igp5"]
+[ext_resource type="Texture2D" uid="uid://cb8uwy28puu0t" path="res://Game Objects/fox/1.PNG" id="1_pwvhm"]
+[ext_resource type="Texture2D" uid="uid://d1etww23uqpim" path="res://Game Objects/fox/2.PNG" id="2_6ul38"]
+[ext_resource type="Texture2D" uid="uid://oi3fqwspmgix" path="res://Game Objects/fox/3.PNG" id="3_tjq3v"]
+[ext_resource type="Texture2D" uid="uid://dwwem1ixlwlb4" path="res://Game Objects/fox/4.PNG" id="4_eclot"]
+[ext_resource type="Texture2D" uid="uid://bcmkr4og8ju67" path="res://Game Objects/fox/5.PNG" id="5_fu4yp"]
+[ext_resource type="Texture2D" uid="uid://s2re0xsh67gs" path="res://Game Objects/fox/6.PNG" id="6_itv1n"]
+[ext_resource type="Texture2D" uid="uid://bjqbmao0swo7t" path="res://Game Objects/fox/7.PNG" id="7_qaqch"]
+[ext_resource type="Texture2D" uid="uid://ccgqdcw18a4rp" path="res://Game Objects/fox/8.PNG" id="8_ftvjm"]
+[ext_resource type="Texture2D" uid="uid://cfufsk1vklxsh" path="res://Game Objects/fox/fox.png" id="10_k4sbh"]
+
+[node name="Level1" type="Node2D"]
+
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_left = -462.0
+offset_top = -168.0
+offset_right = 2034.0
+offset_bottom = 934.0
+color = Color(0.72549, 0.937255, 0.72549, 1)
+
+[node name="FoxGroup" type="Node2D" parent="."]
+position = Vector2(632, -64)
+scale = Vector2(1.23, 1.23)
+
+[node name="1" type="Sprite2D" parent="FoxGroup"]
+position = Vector2(164, 248)
+texture = ExtResource("1_pwvhm")
+
+[node name="2" type="Sprite2D" parent="FoxGroup"]
+position = Vector2(164, 217)
+texture = ExtResource("2_6ul38")
+
+[node name="3" type="Sprite2D" parent="FoxGroup"]
+position = Vector2(166, 281)
+texture = ExtResource("3_tjq3v")
+
+[node name="4" type="Sprite2D" parent="FoxGroup"]
+position = Vector2(164, 360)
+texture = ExtResource("4_eclot")
+
+[node name="5" type="Sprite2D" parent="FoxGroup"]
+position = Vector2(165, 406)
+texture = ExtResource("5_fu4yp")
+
+[node name="6" type="Sprite2D" parent="FoxGroup"]
+position = Vector2(163, 420)
+texture = ExtResource("6_itv1n")
+
+[node name="7" type="Sprite2D" parent="FoxGroup"]
+position = Vector2(283, 412)
+texture = ExtResource("7_qaqch")
+
+[node name="8" type="Sprite2D" parent="FoxGroup"]
+position = Vector2(300, 376)
+texture = ExtResource("8_ftvjm")
+
+[node name="VectorLayer" type="Sprite2D" parent="FoxGroup"]
+position = Vector2(184, 309)
+texture = ExtResource("1_4igp5")
+
+[node name="Fox" type="Sprite2D" parent="."]
+position = Vector2(427, 310)
+scale = Vector2(1.23, 1.23)
+texture = ExtResource("10_k4sbh")

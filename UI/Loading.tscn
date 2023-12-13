@@ -1,0 +1,95 @@
+[gd_scene load_steps=7 format=3 uid="uid://bse8o2mkl2fu3"]
+
+[ext_resource type="Texture2D" uid="uid://v4g1qlq1bb3f" path="res://UI/UI/Loading/Over.PNG" id="1_qqkbv"]
+[ext_resource type="Texture2D" uid="uid://chcf0nhdtqi6q" path="res://UI/UI/Loading/Bar.PNG" id="2_1v42d"]
+[ext_resource type="Theme" uid="uid://dgx0l2ofu1ds4" path="res://Mainmenu/maintheme.tres" id="3_8ya1j"]
+
+[sub_resource type="Animation" id="Animation_yfbn2"]
+resource_name = "loading"
+length = 5.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("TextureProgressBar:value")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.2, 1.7, 3.8, 5),
+"transitions": PackedFloat32Array(1, 1, 1, 0.5, 1),
+"update": 0,
+"values": [0.0, 31.0, 44.0, 48.0, 100.0]
+}
+
+[sub_resource type="Animation" id="Animation_pxlmi"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("TextureProgressBar:value")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_fbff3"]
+_data = {
+"RESET": SubResource("Animation_pxlmi"),
+"loading": SubResource("Animation_yfbn2")
+}
+
+[node name="Loading" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_left = -518.0
+offset_top = -191.0
+offset_right = 1978.0
+offset_bottom = 911.0
+color = Color(0.905882, 0.847059, 0.94902, 1)
+
+[node name="TextureProgressBar" type="TextureProgressBar" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -201.5
+offset_top = -35.5
+offset_right = 201.5
+offset_bottom = 35.5
+grow_horizontal = 2
+grow_vertical = 2
+texture_over = ExtResource("1_qqkbv")
+texture_progress = ExtResource("2_1v42d")
+
+[node name="Label2" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -67.0
+offset_top = -117.0
+offset_right = 67.0
+offset_bottom = -63.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("3_8ya1j")
+text = "Loading"
+vertical_alignment = 1
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_fbff3")
+}

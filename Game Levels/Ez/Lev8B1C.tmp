@@ -1,4 +1,4 @@
-[gd_scene load_steps=37 format=3 uid="uid://mcl6lrd0bg34"]
+[gd_scene load_steps=23 format=3 uid="uid://mcl6lrd0bg34"]
 
 [ext_resource type="Script" path="res://Game Levels/Ez/Level1Ez.gd" id="1_g78ff"]
 [ext_resource type="Texture2D" uid="uid://cb8uwy28puu0t" path="res://Game Objects/fox/1.PNG" id="1_hpd8p"]
@@ -21,67 +21,7 @@
 [ext_resource type="Script" path="res://Game Levels/Ez/ExitPrompt.gd" id="17_ursvg"]
 [ext_resource type="Theme" uid="uid://dgx0l2ofu1ds4" path="res://Mainmenu/maintheme.tres" id="17_vu16p"]
 [ext_resource type="PackedScene" uid="uid://bse8o2mkl2fu3" path="res://UI/Loading.tscn" id="21_ulw87"]
-[ext_resource type="Texture2D" uid="uid://dibeyhhp45x4d" path="res://Transition/transcat/Composition 1.00000.png" id="22_j3lic"]
-[ext_resource type="Texture2D" uid="uid://dmquya788bbp7" path="res://Transition/transcat/Composition 1.00001.png" id="23_t5ypw"]
-[ext_resource type="Texture2D" uid="uid://umdgnct7kts4" path="res://Transition/transcat/Composition 1.00002.png" id="24_x57rr"]
-[ext_resource type="Texture2D" uid="uid://ct1qyiayh8ylv" path="res://Transition/transcat/Composition 1.00003.png" id="25_lwh2r"]
-[ext_resource type="Texture2D" uid="uid://4c2vklswanqr" path="res://Transition/transcat/Composition 1.00004.png" id="26_tffja"]
-[ext_resource type="Texture2D" uid="uid://deal7n378qdy1" path="res://Transition/transcat/Composition 1.00005.png" id="27_k62af"]
-[ext_resource type="Texture2D" uid="uid://cucry7u2hdlbv" path="res://Transition/transcat/Composition 1.00006.png" id="28_tgbg7"]
-[ext_resource type="Texture2D" uid="uid://bkdl2tn6hov1y" path="res://Transition/transcat/Composition 1.00007.png" id="29_yrt1u"]
-[ext_resource type="Texture2D" uid="uid://vg7g0gq4yoii" path="res://Transition/transcat/Composition 1.00008.png" id="30_8x8uy"]
-[ext_resource type="Texture2D" uid="uid://c8amvp7xnupto" path="res://Transition/transcat/Composition 1.00009.png" id="31_14msh"]
-[ext_resource type="Texture2D" uid="uid://bv612fp07mc4o" path="res://Transition/transcat/Composition 1.00010.png" id="32_hawj4"]
-[ext_resource type="Texture2D" uid="uid://cywcc8l5g18lc" path="res://Transition/transcat/Composition 1.00011.png" id="33_3i5su"]
-[ext_resource type="Texture2D" uid="uid://dojojbhg3hoav" path="res://Transition/transcat/Composition 1.00012.png" id="34_i4ri7"]
-[ext_resource type="Script" path="res://Mainmenu/Transition.gd" id="35_iya3y"]
-
-[sub_resource type="SpriteFrames" id="SpriteFrames_qj1fb"]
-animations = [{
-"frames": [{
-"duration": 1.0,
-"texture": ExtResource("22_j3lic")
-}, {
-"duration": 1.0,
-"texture": ExtResource("23_t5ypw")
-}, {
-"duration": 1.0,
-"texture": ExtResource("24_x57rr")
-}, {
-"duration": 1.0,
-"texture": ExtResource("25_lwh2r")
-}, {
-"duration": 1.0,
-"texture": ExtResource("26_tffja")
-}, {
-"duration": 1.0,
-"texture": ExtResource("27_k62af")
-}, {
-"duration": 1.0,
-"texture": ExtResource("28_tgbg7")
-}, {
-"duration": 1.0,
-"texture": ExtResource("29_yrt1u")
-}, {
-"duration": 1.0,
-"texture": ExtResource("30_8x8uy")
-}, {
-"duration": 1.0,
-"texture": ExtResource("31_14msh")
-}, {
-"duration": 1.0,
-"texture": ExtResource("32_hawj4")
-}, {
-"duration": 1.0,
-"texture": ExtResource("33_3i5su")
-}, {
-"duration": 1.0,
-"texture": ExtResource("34_i4ri7")
-}],
-"loop": false,
-"name": &"default",
-"speed": 12.0
-}]
+[ext_resource type="PackedScene" uid="uid://bmthyn5riwkjx" path="res://Transition/transcat/transition.tscn" id="22_t16h1"]
 
 [node name="Control" type="Control"]
 layout_mode = 3
@@ -491,15 +431,10 @@ vertical_alignment = 1
 visible = false
 layout_mode = 1
 
-[node name="Transition" type="AnimatedSprite2D" parent="."]
-top_level = true
-position = Vector2(665, 356)
-scale = Vector2(1.0375, 1.06389)
-sprite_frames = SubResource("SpriteFrames_qj1fb")
-script = ExtResource("35_iya3y")
+[node name="Transition" parent="." instance=ExtResource("22_t16h1")]
+visible = false
+layout_mode = 1
 
 [connection signal="button_up" from="Back" to="." method="_on_back_button_up"]
-[connection signal="button_up" from="Reset" to="." method="_on_reset_button_up"]
 [connection signal="button_up" from="ExitPrompt/Confirm" to="ExitPrompt" method="_on_confirm_button_up"]
 [connection signal="button_up" from="ExitPrompt/Cancel" to="ExitPrompt" method="_on_cancel_button_up"]
-[connection signal="animation_finished" from="Transition" to="Transition" method="_on_animation_finished"]

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bw6kwshkn16tj"
-path="res://.godot/imported/Paint Layer 10.PNG-ec370ade38d175c1604dcd23cb6c59a2.ctex"
+uid="uid://dpdomp6x2udp"
+path="res://.godot/imported/NoDown.PNG-1c893d45b06ccc7a9ce3f26b41bb0a52.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://UI/UI/Restart Button/Paint Layer 10.PNG"
-dest_files=["res://.godot/imported/Paint Layer 10.PNG-ec370ade38d175c1604dcd23cb6c59a2.ctex"]
+source_file="res://UI/UI/No Button/NoDown.PNG"
+dest_files=["res://.godot/imported/NoDown.PNG-1c893d45b06ccc7a9ce3f26b41bb0a52.ctex"]
 
 [params]
 

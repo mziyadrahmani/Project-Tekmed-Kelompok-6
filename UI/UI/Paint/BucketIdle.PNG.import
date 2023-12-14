@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://djxrond17bn6w"
-path="res://.godot/imported/Copy of Paint Layer 10.PNG-4be4c320dd4df9c4d06a2f632a9317df.ctex"
+uid="uid://72x7njlheqw5"
+path="res://.godot/imported/BucketIdle.PNG-cfe68859f97e1215267cbb870998c320.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://UI/UI/Restart Button/Copy of Paint Layer 10.PNG"
-dest_files=["res://.godot/imported/Copy of Paint Layer 10.PNG-4be4c320dd4df9c4d06a2f632a9317df.ctex"]
+source_file="res://UI/UI/Paint/BucketIdle.PNG"
+dest_files=["res://.godot/imported/BucketIdle.PNG-cfe68859f97e1215267cbb870998c320.ctex"]
 
 [params]
 

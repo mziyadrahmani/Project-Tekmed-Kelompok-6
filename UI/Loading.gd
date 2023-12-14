@@ -9,7 +9,7 @@ extends Control
 
 func _on_animation_player_animation_finished(loading):
 	var target = Global.selectedLevel
-	var transition_node = get_node("/root/Control/Transition")
-	transition_node.play()
+	#var transition_node = get_node("/root/Control/Transition")
+	#transition_node.play()
 	await get_tree().create_timer(0.5).timeout
 	get_tree().change_scene_to_file(target)

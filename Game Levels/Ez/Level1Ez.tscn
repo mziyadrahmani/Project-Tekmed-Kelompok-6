@@ -1,9 +1,10 @@
-[gd_scene load_steps=37 format=3 uid="uid://mcl6lrd0bg34"]
+[gd_scene load_steps=39 format=3 uid="uid://mcl6lrd0bg34"]
 
 [ext_resource type="Script" path="res://Game Levels/Ez/Level1Ez.gd" id="1_g78ff"]
 [ext_resource type="Texture2D" uid="uid://cb8uwy28puu0t" path="res://Game Objects/fox/1.PNG" id="1_hpd8p"]
 [ext_resource type="Texture2D" uid="uid://d1etww23uqpim" path="res://Game Objects/fox/2.PNG" id="2_txcll"]
 [ext_resource type="Texture2D" uid="uid://oi3fqwspmgix" path="res://Game Objects/fox/3.PNG" id="3_ey7t5"]
+[ext_resource type="Script" path="res://Game Levels/Ez/Foreground.gd" id="3_ntb2y"]
 [ext_resource type="Texture2D" uid="uid://dwwem1ixlwlb4" path="res://Game Objects/fox/4.PNG" id="4_a37m1"]
 [ext_resource type="Texture2D" uid="uid://bcmkr4og8ju67" path="res://Game Objects/fox/5.PNG" id="5_p0cum"]
 [ext_resource type="Texture2D" uid="uid://s2re0xsh67gs" path="res://Game Objects/fox/6.PNG" id="6_wjpfx"]
@@ -16,6 +17,7 @@
 [ext_resource type="Texture2D" uid="uid://ddhq85107srse" path="res://UI/UI/Foreground/Window.PNG" id="14_5nnfu"]
 [ext_resource type="Theme" uid="uid://obiv5qeqsjsa" path="res://UI/UI/Back Button/Back.tres" id="14_v8c00"]
 [ext_resource type="Theme" uid="uid://bn0xlgt6xyyi5" path="res://UI/UI/Restart Button/Restart.tres" id="15_6xald"]
+[ext_resource type="Script" path="res://Game Levels/Ez/BucketsGroup.gd" id="15_cl02t"]
 [ext_resource type="Theme" uid="uid://bmpigw3efnchj" path="res://UI/UI/Ok Button/OkButton.tres" id="15_dxkea"]
 [ext_resource type="Theme" uid="uid://bpkw5rj3b85v7" path="res://UI/UI/No Button/NoButton.tres" id="16_7uhd0"]
 [ext_resource type="Script" path="res://Game Levels/Ez/ExitPrompt.gd" id="17_ursvg"]
@@ -112,6 +114,7 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 texture = ExtResource("12_m4tir")
+script = ExtResource("3_ntb2y")
 metadata/_edit_lock_ = true
 
 [node name="Back" type="Button" parent="."]
@@ -247,7 +250,7 @@ grow_horizontal = 2
 grow_vertical = 2
 texture = ExtResource("9_yqahf")
 
-[node name="GridContainer" type="Control" parent="."]
+[node name="BucketsGroup" type="Control" parent="."]
 layout_mode = 1
 anchor_left = 0.447
 anchor_top = 0.306
@@ -260,8 +263,9 @@ offset_bottom = 391.0
 grow_horizontal = 2
 grow_vertical = 2
 scale = Vector2(0.806661, 0.806661)
+script = ExtResource("15_cl02t")
 
-[node name="Button" type="Button" parent="GridContainer"]
+[node name="Button" type="Button" parent="BucketsGroup"]
 modulate = Color(1, 0.662745, 0.207843, 1)
 layout_mode = 1
 anchors_preset = 15
@@ -274,7 +278,7 @@ grow_vertical = 2
 theme = ExtResource("12_goa3k")
 theme_type_variation = &"FlatButton"
 
-[node name="Button2" type="Button" parent="GridContainer"]
+[node name="Button2" type="Button" parent="BucketsGroup"]
 modulate = Color(1, 0.686275, 0.509804, 1)
 layout_mode = 1
 anchors_preset = 15
@@ -287,7 +291,7 @@ grow_horizontal = 2
 grow_vertical = 2
 theme = ExtResource("12_goa3k")
 
-[node name="Button3" type="Button" parent="GridContainer"]
+[node name="Button3" type="Button" parent="BucketsGroup"]
 modulate = Color(0, 0.780392, 0.972549, 1)
 layout_mode = 1
 anchors_preset = 15
@@ -300,7 +304,7 @@ grow_horizontal = 2
 grow_vertical = 2
 theme = ExtResource("12_goa3k")
 
-[node name="Button4" type="Button" parent="GridContainer"]
+[node name="Button4" type="Button" parent="BucketsGroup"]
 modulate = Color(0, 0.941176, 0.745098, 1)
 layout_mode = 1
 anchors_preset = 15
@@ -313,7 +317,7 @@ grow_horizontal = 2
 grow_vertical = 2
 theme = ExtResource("12_goa3k")
 
-[node name="Button5" type="Button" parent="GridContainer"]
+[node name="Button5" type="Button" parent="BucketsGroup"]
 modulate = Color(1, 0.894118, 0.752941, 1)
 layout_mode = 1
 anchors_preset = 15
@@ -326,7 +330,7 @@ grow_horizontal = 2
 grow_vertical = 2
 theme = ExtResource("12_goa3k")
 
-[node name="Button6" type="Button" parent="GridContainer"]
+[node name="Button6" type="Button" parent="BucketsGroup"]
 modulate = Color(0.635294, 0.635294, 0.635294, 1)
 layout_mode = 1
 anchors_preset = 15
@@ -340,7 +344,7 @@ grow_horizontal = 2
 grow_vertical = 2
 theme = ExtResource("12_goa3k")
 
-[node name="Button7" type="Button" parent="GridContainer"]
+[node name="Button7" type="Button" parent="BucketsGroup"]
 modulate = Color(1, 0.188235, 1, 1)
 layout_mode = 1
 anchors_preset = 15
@@ -354,7 +358,7 @@ grow_horizontal = 2
 grow_vertical = 2
 theme = ExtResource("12_goa3k")
 
-[node name="Button8" type="Button" parent="GridContainer"]
+[node name="Button8" type="Button" parent="BucketsGroup"]
 modulate = Color(0.843137, 0.356863, 0.188235, 1)
 layout_mode = 1
 anchors_preset = 15
@@ -368,7 +372,7 @@ grow_horizontal = 2
 grow_vertical = 2
 theme = ExtResource("12_goa3k")
 
-[node name="Button9" type="Button" parent="GridContainer"]
+[node name="Button9" type="Button" parent="BucketsGroup"]
 modulate = Color(0.823529, 0.713726, 0.960784, 1)
 layout_mode = 1
 anchors_preset = 15
@@ -381,7 +385,7 @@ grow_horizontal = 2
 grow_vertical = 2
 theme = ExtResource("12_goa3k")
 
-[node name="Button10" type="Button" parent="GridContainer"]
+[node name="Button10" type="Button" parent="BucketsGroup"]
 modulate = Color(0.737255, 0.968627, 0.533333, 1)
 layout_mode = 1
 anchors_preset = 15
@@ -395,7 +399,7 @@ grow_horizontal = 2
 grow_vertical = 2
 theme = ExtResource("12_goa3k")
 
-[node name="Button11" type="Button" parent="GridContainer"]
+[node name="Button11" type="Button" parent="BucketsGroup"]
 modulate = Color(0.976471, 0.85098, 0, 1)
 layout_mode = 1
 anchors_preset = 15
@@ -409,7 +413,7 @@ grow_horizontal = 2
 grow_vertical = 2
 theme = ExtResource("12_goa3k")
 
-[node name="Button12" type="Button" parent="GridContainer"]
+[node name="Button12" type="Button" parent="BucketsGroup"]
 modulate = Color(0.458824, 0.87451, 0.980392, 1)
 layout_mode = 1
 anchors_preset = 15
@@ -500,6 +504,19 @@ script = ExtResource("35_iya3y")
 
 [connection signal="button_up" from="Back" to="." method="_on_back_button_up"]
 [connection signal="button_up" from="Reset" to="." method="_on_reset_button_up"]
+[connection signal="button_pressed" from="BucketsGroup" to="." method="_on_buckets_group_button_pressed"]
+[connection signal="pressed" from="BucketsGroup/Button" to="BucketsGroup" method="_on_button_pressed"]
+[connection signal="pressed" from="BucketsGroup/Button2" to="BucketsGroup" method="_on_button_2_pressed"]
+[connection signal="pressed" from="BucketsGroup/Button3" to="BucketsGroup" method="_on_button_3_pressed"]
+[connection signal="pressed" from="BucketsGroup/Button4" to="BucketsGroup" method="_on_button_4_pressed"]
+[connection signal="pressed" from="BucketsGroup/Button5" to="BucketsGroup" method="_on_button_5_pressed"]
+[connection signal="pressed" from="BucketsGroup/Button6" to="BucketsGroup" method="_on_button_6_pressed"]
+[connection signal="pressed" from="BucketsGroup/Button7" to="BucketsGroup" method="_on_button_7_pressed"]
+[connection signal="pressed" from="BucketsGroup/Button8" to="BucketsGroup" method="_on_button_8_pressed"]
+[connection signal="pressed" from="BucketsGroup/Button9" to="BucketsGroup" method="_on_button_9_pressed"]
+[connection signal="pressed" from="BucketsGroup/Button10" to="BucketsGroup" method="_on_button_10_pressed"]
+[connection signal="pressed" from="BucketsGroup/Button11" to="BucketsGroup" method="_on_button_11_pressed"]
+[connection signal="pressed" from="BucketsGroup/Button12" to="BucketsGroup" method="_on_button_12_pressed"]
 [connection signal="button_up" from="ExitPrompt/Confirm" to="ExitPrompt" method="_on_confirm_button_up"]
 [connection signal="button_up" from="ExitPrompt/Cancel" to="ExitPrompt" method="_on_cancel_button_up"]
 [connection signal="animation_finished" from="Transition" to="Transition" method="_on_animation_finished"]

@@ -1,13 +1,13 @@
 extends Control
 
 var ColDefault = "#ffffff"
-var SelectedColor
+var SelectedColor = ColDefault
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	$Transition.play()
 	ResetColor()
-
+	
 
 func ResetColor():
 	$ColorArea/a1.modulate = ColDefault
@@ -29,3 +29,8 @@ func _on_back_button_up():
 func _on_reset_button_up():
 	get_tree().reload_current_scene()
 	print ("scene reloaded")
+
+
+func _on_buckets_group_button_pressed(button):
+	SelectedColor = button.modulate
+	print(button.modulate)

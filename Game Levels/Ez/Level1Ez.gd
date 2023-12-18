@@ -7,6 +7,11 @@ var SelectedColor = ColDefault
 func _ready():
 	$Transition.play()
 	ResetColor()
+	if Global.tutorial == true :
+		$Tutorial.visible = true
+	else:
+		$Tutorial.visible = false
+		
 	
 func _input(_event):
 	if Input.is_mouse_button_pressed(MOUSE_BUTTON_LEFT) :
@@ -41,3 +46,9 @@ func _on_buckets_group_button_pressed(button):
 
 func _on_bgm_finished():
 	$BGM.play()
+
+
+func _on_tutorial_gui_input(event):
+	if event is InputEventMouseButton :
+		Global.tutorial = false
+		$Tutorial.visible = false

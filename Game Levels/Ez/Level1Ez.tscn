@@ -1,4 +1,4 @@
-[gd_scene load_steps=80 format=3 uid="uid://mcl6lrd0bg34"]
+[gd_scene load_steps=81 format=3 uid="uid://mcl6lrd0bg34"]
 
 [ext_resource type="Script" path="res://Game Levels/Ez/Level1Ez.gd" id="1_g78ff"]
 [ext_resource type="Texture2D" uid="uid://cb8uwy28puu0t" path="res://Game Objects/fox/1.PNG" id="1_hpd8p"]
@@ -77,6 +77,7 @@
 [ext_resource type="Texture2D" uid="uid://dgcxq4rofo578" path="res://UI/UI/Star_Anim/frame0024.png" id="57_ol5il"]
 [ext_resource type="Theme" uid="uid://benpa1c3s0jpd" path="res://UI/UI/Next Button/Next.tres" id="58_dy2is"]
 [ext_resource type="Script" path="res://Game Levels/Ez/Alert.gd" id="60_ifpos"]
+[ext_resource type="Texture2D" uid="uid://cv7otedk6thg" path="res://UI/UI/Foreground/tutorial.png" id="62_v7hyf"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_y55f6"]
 animations = [{
@@ -831,6 +832,12 @@ autowrap_mode = 2
 visible = false
 layout_mode = 1
 
+[node name="Tutorial" type="TextureRect" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("62_v7hyf")
+
 [node name="Transition" type="AnimatedSprite2D" parent="."]
 top_level = true
 position = Vector2(665, 356)
@@ -880,5 +887,6 @@ bus = &"SFX"
 [connection signal="button_up" from="ExitPrompt/Confirm" to="ExitPrompt" method="_on_confirm_button_up"]
 [connection signal="button_up" from="ExitPrompt/Cancel" to="ExitPrompt" method="_on_cancel_button_up"]
 [connection signal="pressed" from="Alert/Confirm2" to="Alert" method="_on_confirm_2_pressed"]
+[connection signal="gui_input" from="Tutorial" to="." method="_on_tutorial_gui_input"]
 [connection signal="animation_finished" from="Transition" to="Transition" method="_on_animation_finished"]
 [connection signal="finished" from="BGM" to="." method="_on_bgm_finished"]

@@ -4,6 +4,7 @@ extends Control
 
 func _on_next_pressed():
 	$"../Alert".visible = true
+	$"../Bruh".play()
 	#Global.selectedLevel = "res://Game Levels/Ez/Level2Ez.tscn"
 	#$"../Transition".play()
 	#await get_tree().create_timer(0.5).timeout

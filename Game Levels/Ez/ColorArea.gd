@@ -10,6 +10,7 @@ func checkWinCondition():
 		$"../Transition".play()
 		await get_tree().create_timer(0.5).timeout
 		$"../Win".visible = true
+		$"../WinSfx".play()
 
 func _on_a_1_pressed():
 	var color = get_parent().SelectedColor

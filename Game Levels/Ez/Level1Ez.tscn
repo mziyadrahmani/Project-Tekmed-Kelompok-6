@@ -1,4 +1,4 @@
-[gd_scene load_steps=81 format=3 uid="uid://mcl6lrd0bg34"]
+[gd_scene load_steps=83 format=3 uid="uid://mcl6lrd0bg34"]
 
 [ext_resource type="Script" path="res://Game Levels/Ez/Level1Ez.gd" id="1_g78ff"]
 [ext_resource type="Texture2D" uid="uid://cb8uwy28puu0t" path="res://Game Objects/fox/1.PNG" id="1_hpd8p"]
@@ -78,6 +78,8 @@
 [ext_resource type="Theme" uid="uid://benpa1c3s0jpd" path="res://UI/UI/Next Button/Next.tres" id="58_dy2is"]
 [ext_resource type="Script" path="res://Game Levels/Ez/Alert.gd" id="60_ifpos"]
 [ext_resource type="Texture2D" uid="uid://cv7otedk6thg" path="res://UI/UI/Foreground/tutorial.png" id="62_v7hyf"]
+[ext_resource type="AudioStream" uid="uid://kl3dll52l8cf" path="res://Audio/Win game.mp3" id="79_f11a3"]
+[ext_resource type="AudioStream" uid="uid://c15u4ocanlavv" path="res://Audio/Bruh Sound Effect #2.mp3" id="80_jeiou"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_y55f6"]
 animations = [{
@@ -854,6 +856,16 @@ bus = &"SFX"
 
 [node name="Pop" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("48_v7amj")
+volume_db = 4.685
+bus = &"SFX"
+
+[node name="WinSfx" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("79_f11a3")
+volume_db = 4.685
+bus = &"SFX"
+
+[node name="Bruh" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("80_jeiou")
 volume_db = 4.685
 bus = &"SFX"
 

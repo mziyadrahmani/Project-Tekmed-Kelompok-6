@@ -56,37 +56,59 @@ theme_override_font_sizes/font_size = 59
 
 [node name="TextureRect" type="TextureRect" parent="."]
 layout_mode = 2
-offset_left = 132.0
-offset_top = 171.0
-offset_right = 632.0
-offset_bottom = 671.0
+offset_left = 977.0
+offset_top = 411.0
+offset_right = 1477.0
+offset_bottom = 911.0
 scale = Vector2(0.4758, 0.4758)
 size_flags_horizontal = 4
 texture = ExtResource("3_xqy0q")
 
 [node name="TextureRect2" type="TextureRect" parent="."]
 layout_mode = 2
-offset_left = 167.0
-offset_top = 419.0
-offset_right = 1191.0
-offset_bottom = 1590.0
+offset_left = 126.0
+offset_top = 433.0
+offset_right = 1150.0
+offset_bottom = 1604.0
 scale = Vector2(0.162593, 0.162593)
 texture = ExtResource("4_x5xry")
 
-[node name="Label2" type="Label" parent="."]
-layout_mode = 1
-offset_left = 438.0
-offset_top = 198.0
-offset_right = 1128.0
-offset_bottom = 594.0
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+layout_mode = 0
+offset_left = 303.0
+offset_top = 164.0
+offset_right = 986.0
+offset_bottom = 680.0
 theme = ExtResource("1_frndp")
-text = "Anggota Kelompok
+theme_override_font_sizes/normal_font_size = 51
+bbcode_enabled = true
+text = "[center] Anggota Kelompok
 
 Muhammad Amin
 Khairia Putri
 Ummi Rodhiah Saputri
 M. Ziyad Rahmani
-Haikal Ahmad"
-horizontal_alignment = 2
+Haikal Ahmad
+
+Developed by:
+M. Ziyad Rahmani
+
+Music :
+Jazzy Frenchy by Benjamin Tissot
+Jazzy Comedy by Benjamin Tissot
+
+SFX :
+Various Youtube Videos
+
+UI Design:
+Handmade by Ziyad
+
+Level Assets:
+Google Image
+
+Big Thanks to:
+Alphin Albukhari
+
+[/center]"
 
 [connection signal="button_up" from="Kembali" to="." method="_on_kembali_button_up"]

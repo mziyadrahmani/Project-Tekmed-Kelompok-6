@@ -8,6 +8,9 @@ func _ready():
 	$Transition.play()
 	ResetColor()
 	
+func _input(_event):
+	if Input.is_mouse_button_pressed(MOUSE_BUTTON_LEFT) :
+		$Pop.play()
 
 func ResetColor():
 	$ColorArea/a1.modulate = ColDefault
@@ -34,3 +37,7 @@ func _on_reset_button_up():
 func _on_buckets_group_button_pressed(button):
 	SelectedColor = button.modulate
 	print(button.modulate)
+
+
+func _on_bgm_finished():
+	$BGM.play()

@@ -1,4 +1,4 @@
-[gd_scene load_steps=39 format=3 uid="uid://mcl6lrd0bg34"]
+[gd_scene load_steps=80 format=3 uid="uid://mcl6lrd0bg34"]
 
 [ext_resource type="Script" path="res://Game Levels/Ez/Level1Ez.gd" id="1_g78ff"]
 [ext_resource type="Texture2D" uid="uid://cb8uwy28puu0t" path="res://Game Objects/fox/1.PNG" id="1_hpd8p"]
@@ -9,23 +9,33 @@
 [ext_resource type="Texture2D" uid="uid://bcmkr4og8ju67" path="res://Game Objects/fox/5.PNG" id="5_p0cum"]
 [ext_resource type="Texture2D" uid="uid://s2re0xsh67gs" path="res://Game Objects/fox/6.PNG" id="6_wjpfx"]
 [ext_resource type="Texture2D" uid="uid://bjqbmao0swo7t" path="res://Game Objects/fox/7.PNG" id="7_86eg5"]
+[ext_resource type="Script" path="res://Game Levels/Ez/ColorArea.gd" id="7_ubocq"]
 [ext_resource type="Texture2D" uid="uid://ccgqdcw18a4rp" path="res://Game Objects/fox/8.PNG" id="8_hhrhj"]
-[ext_resource type="Texture2D" uid="uid://3flibqndfdr3" path="res://Game Objects/fox/fox.svg" id="9_yqahf"]
+[ext_resource type="BitMap" uid="uid://dt167qxwkoy44" path="res://Game Objects/fox/Mask/1.PNG" id="9_5myrv"]
 [ext_resource type="Texture2D" uid="uid://cfufsk1vklxsh" path="res://Game Objects/fox/fox.png" id="10_wlpxp"]
+[ext_resource type="Texture2D" uid="uid://chn3qaohbvlem" path="res://Game Objects/fox/Vector Layer.PNG" id="11_3yvdf"]
+[ext_resource type="BitMap" uid="uid://w0yge2fshr5" path="res://Game Objects/fox/Mask/2.PNG" id="11_uroq5"]
 [ext_resource type="Theme" uid="uid://cermummayjwv0" path="res://UI/UI/Paint/BucketIdle.tres" id="12_goa3k"]
 [ext_resource type="Texture2D" uid="uid://b0r8f124xc60a" path="res://UI/UI/Foreground/Foreground.PNG" id="12_m4tir"]
+[ext_resource type="BitMap" uid="uid://cq1xodu35r1tj" path="res://Game Objects/fox/Mask/3.PNG" id="13_7bhhs"]
 [ext_resource type="Texture2D" uid="uid://ddhq85107srse" path="res://UI/UI/Foreground/Window.PNG" id="14_5nnfu"]
 [ext_resource type="Theme" uid="uid://obiv5qeqsjsa" path="res://UI/UI/Back Button/Back.tres" id="14_v8c00"]
 [ext_resource type="Theme" uid="uid://bn0xlgt6xyyi5" path="res://UI/UI/Restart Button/Restart.tres" id="15_6xald"]
 [ext_resource type="Script" path="res://Game Levels/Ez/BucketsGroup.gd" id="15_cl02t"]
 [ext_resource type="Theme" uid="uid://bmpigw3efnchj" path="res://UI/UI/Ok Button/OkButton.tres" id="15_dxkea"]
+[ext_resource type="BitMap" uid="uid://c6to7bwyj62r2" path="res://Game Objects/fox/Mask/4.PNG" id="15_ggaly"]
 [ext_resource type="Theme" uid="uid://bpkw5rj3b85v7" path="res://UI/UI/No Button/NoButton.tres" id="16_7uhd0"]
+[ext_resource type="BitMap" uid="uid://crr11ewtgc14s" path="res://Game Objects/fox/Mask/5.PNG" id="17_l4no1"]
 [ext_resource type="Script" path="res://Game Levels/Ez/ExitPrompt.gd" id="17_ursvg"]
 [ext_resource type="Theme" uid="uid://dgx0l2ofu1ds4" path="res://Mainmenu/maintheme.tres" id="17_vu16p"]
+[ext_resource type="BitMap" uid="uid://cwxetep3qimw3" path="res://Game Objects/fox/Mask/6.PNG" id="19_qthnn"]
 [ext_resource type="PackedScene" uid="uid://bse8o2mkl2fu3" path="res://UI/Loading.tscn" id="21_ulw87"]
+[ext_resource type="BitMap" uid="uid://cbvyb1j8k1o28" path="res://Game Objects/fox/Mask/7.PNG" id="21_w2tcd"]
 [ext_resource type="Texture2D" uid="uid://dibeyhhp45x4d" path="res://Transition/transcat/Composition 1.00000.png" id="22_j3lic"]
+[ext_resource type="BitMap" uid="uid://oj2md3dwkgn4" path="res://Game Objects/fox/Mask/8.PNG" id="23_b6a0o"]
 [ext_resource type="Texture2D" uid="uid://dmquya788bbp7" path="res://Transition/transcat/Composition 1.00001.png" id="23_t5ypw"]
 [ext_resource type="Texture2D" uid="uid://umdgnct7kts4" path="res://Transition/transcat/Composition 1.00002.png" id="24_x57rr"]
+[ext_resource type="BitMap" uid="uid://ck711krsxubtj" path="res://Game Objects/fox/Mask/Vector Layer.PNG" id="25_6q1qy"]
 [ext_resource type="Texture2D" uid="uid://ct1qyiayh8ylv" path="res://Transition/transcat/Composition 1.00003.png" id="25_lwh2r"]
 [ext_resource type="Texture2D" uid="uid://4c2vklswanqr" path="res://Transition/transcat/Composition 1.00004.png" id="26_tffja"]
 [ext_resource type="Texture2D" uid="uid://deal7n378qdy1" path="res://Transition/transcat/Composition 1.00005.png" id="27_k62af"]
@@ -35,8 +45,121 @@
 [ext_resource type="Texture2D" uid="uid://c8amvp7xnupto" path="res://Transition/transcat/Composition 1.00009.png" id="31_14msh"]
 [ext_resource type="Texture2D" uid="uid://bv612fp07mc4o" path="res://Transition/transcat/Composition 1.00010.png" id="32_hawj4"]
 [ext_resource type="Texture2D" uid="uid://cywcc8l5g18lc" path="res://Transition/transcat/Composition 1.00011.png" id="33_3i5su"]
+[ext_resource type="Script" path="res://Game Levels/Ez/Win.gd" id="33_7mhpj"]
+[ext_resource type="Texture2D" uid="uid://dww8tqadqy24" path="res://UI/UI/Star_Anim/frame0000.png" id="33_vnrca"]
+[ext_resource type="Texture2D" uid="uid://cro4d8ulepsfo" path="res://UI/UI/Star_Anim/frame0001.png" id="34_g1fep"]
 [ext_resource type="Texture2D" uid="uid://dojojbhg3hoav" path="res://Transition/transcat/Composition 1.00012.png" id="34_i4ri7"]
+[ext_resource type="Texture2D" uid="uid://cseklk7p1uolc" path="res://UI/UI/Star_Anim/frame0002.png" id="35_02y7b"]
 [ext_resource type="Script" path="res://Mainmenu/Transition.gd" id="35_iya3y"]
+[ext_resource type="Texture2D" uid="uid://cjvqryqwmw7t1" path="res://UI/UI/Star_Anim/frame0003.png" id="36_t1igo"]
+[ext_resource type="Texture2D" uid="uid://dqff6muxub0gj" path="res://UI/UI/Star_Anim/frame0004.png" id="37_tjgwf"]
+[ext_resource type="Texture2D" uid="uid://dywlkou0kfiwm" path="res://UI/UI/Star_Anim/frame0005.png" id="38_m4xnt"]
+[ext_resource type="Texture2D" uid="uid://dt0ewb6gyp0fa" path="res://UI/UI/Star_Anim/frame0006.png" id="39_6qqpr"]
+[ext_resource type="Texture2D" uid="uid://cg61erd3t2jj5" path="res://UI/UI/Star_Anim/frame0007.png" id="40_dmdmy"]
+[ext_resource type="Texture2D" uid="uid://ssxyu6qw6u5f" path="res://UI/UI/Star_Anim/frame0008.png" id="41_it3hk"]
+[ext_resource type="Texture2D" uid="uid://w54ieuavonfd" path="res://UI/UI/Star_Anim/frame0009.png" id="42_k76oy"]
+[ext_resource type="Texture2D" uid="uid://bbcmo548je0ke" path="res://UI/UI/Star_Anim/frame0010.png" id="43_2p8si"]
+[ext_resource type="Texture2D" uid="uid://d0qdnme1ltk85" path="res://UI/UI/Star_Anim/frame0011.png" id="44_cmj78"]
+[ext_resource type="Texture2D" uid="uid://cex7b7x7xc7n1" path="res://UI/UI/Star_Anim/frame0012.png" id="45_swt0t"]
+[ext_resource type="Texture2D" uid="uid://clunl783ago5i" path="res://UI/UI/Star_Anim/frame0013.png" id="46_xldxg"]
+[ext_resource type="Texture2D" uid="uid://ba3qa15vccbmq" path="res://UI/UI/Star_Anim/frame0014.png" id="47_qt4w0"]
+[ext_resource type="AudioStream" uid="uid://bcrsh2hmruh3e" path="res://Audio/jazzyfrenchy.mp3" id="48_ltat7"]
+[ext_resource type="Texture2D" uid="uid://ckg61fnqvkxxv" path="res://UI/UI/Star_Anim/frame0015.png" id="48_ru0l8"]
+[ext_resource type="AudioStream" uid="uid://cjw3ex0jgtfrb" path="res://Audio/Pop 1.ogg" id="48_v7amj"]
+[ext_resource type="Texture2D" uid="uid://bfxqyrebgw4pr" path="res://UI/UI/Star_Anim/frame0016.png" id="49_c85q0"]
+[ext_resource type="Texture2D" uid="uid://ck5dunkgyjqko" path="res://UI/UI/Star_Anim/frame0017.png" id="50_4edbf"]
+[ext_resource type="Texture2D" uid="uid://80f08pisgg57" path="res://UI/UI/Star_Anim/frame0018.png" id="51_s2c8x"]
+[ext_resource type="Texture2D" uid="uid://shc3xh3v0o7n" path="res://UI/UI/Star_Anim/frame0019.png" id="52_brgva"]
+[ext_resource type="Texture2D" uid="uid://dg33eehgk25jk" path="res://UI/UI/Star_Anim/frame0020.png" id="53_ad714"]
+[ext_resource type="Texture2D" uid="uid://dph8mr5n04co3" path="res://UI/UI/Star_Anim/frame0021.png" id="54_4hdbi"]
+[ext_resource type="Texture2D" uid="uid://d4cb8bvyrruvy" path="res://UI/UI/Star_Anim/frame0022.png" id="55_rv057"]
+[ext_resource type="Texture2D" uid="uid://d0rhk57wwfo71" path="res://UI/UI/Star_Anim/frame0023.png" id="56_1ivnx"]
+[ext_resource type="Texture2D" uid="uid://dgcxq4rofo578" path="res://UI/UI/Star_Anim/frame0024.png" id="57_ol5il"]
+[ext_resource type="Theme" uid="uid://benpa1c3s0jpd" path="res://UI/UI/Next Button/Next.tres" id="58_dy2is"]
+[ext_resource type="Script" path="res://Game Levels/Ez/Alert.gd" id="60_ifpos"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_y55f6"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("33_vnrca")
+}, {
+"duration": 1.0,
+"texture": ExtResource("34_g1fep")
+}, {
+"duration": 1.0,
+"texture": ExtResource("35_02y7b")
+}, {
+"duration": 1.0,
+"texture": ExtResource("36_t1igo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("37_tjgwf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("38_m4xnt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("39_6qqpr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("40_dmdmy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("41_it3hk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("42_k76oy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("43_2p8si")
+}, {
+"duration": 1.0,
+"texture": ExtResource("44_cmj78")
+}, {
+"duration": 1.0,
+"texture": ExtResource("45_swt0t")
+}, {
+"duration": 1.0,
+"texture": ExtResource("46_xldxg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("47_qt4w0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("48_ru0l8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("49_c85q0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("50_4edbf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("51_s2c8x")
+}, {
+"duration": 1.0,
+"texture": ExtResource("52_brgva")
+}, {
+"duration": 1.0,
+"texture": ExtResource("53_ad714")
+}, {
+"duration": 1.0,
+"texture": ExtResource("54_4hdbi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("55_rv057")
+}, {
+"duration": 1.0,
+"texture": ExtResource("56_1ivnx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("57_ol5il")
+}],
+"loop": true,
+"name": &"default",
+"speed": 12.0
+}]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_qj1fb"]
 animations = [{
@@ -85,7 +208,7 @@ animations = [{
 "speed": 12.0
 }]
 
-[node name="Control" type="Control"]
+[node name="Level1Ez" type="Control"]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -116,6 +239,25 @@ grow_vertical = 2
 texture = ExtResource("12_m4tir")
 script = ExtResource("3_ntb2y")
 metadata/_edit_lock_ = true
+
+[node name="Label3" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -163.0
+offset_top = -323.0
+offset_right = 163.0
+offset_bottom = -269.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("17_vu16p")
+theme_override_font_sizes/font_size = 71
+text = "LEVEL 1 - RUBAH"
+horizontal_alignment = 1
+vertical_alignment = 1
 
 [node name="Back" type="Button" parent="."]
 layout_mode = 0
@@ -170,85 +312,131 @@ offset_bottom = 101.0
 grow_horizontal = 2
 grow_vertical = 2
 scale = Vector2(1.55543, 1.55543)
+script = ExtResource("7_ubocq")
 
-[node name="a1" type="TextureRect" parent="ColorArea"]
+[node name="a1" type="TextureButton" parent="ColorArea"]
 layout_mode = 0
 offset_left = 57.0
 offset_top = 48.0
 offset_right = 279.0
 offset_bottom = 217.0
-texture = ExtResource("1_hpd8p")
+texture_normal = ExtResource("1_hpd8p")
+texture_pressed = ExtResource("1_hpd8p")
+texture_hover = ExtResource("1_hpd8p")
+texture_disabled = ExtResource("1_hpd8p")
+texture_focused = ExtResource("1_hpd8p")
+texture_click_mask = ExtResource("9_5myrv")
 
-[node name="a2" type="TextureRect" parent="ColorArea"]
+[node name="a2" type="TextureButton" parent="ColorArea"]
 layout_mode = 0
 offset_left = 76.0
 offset_top = 70.0
 offset_right = 261.0
 offset_bottom = 131.0
-texture = ExtResource("2_txcll")
+texture_normal = ExtResource("2_txcll")
+texture_pressed = ExtResource("2_txcll")
+texture_hover = ExtResource("2_txcll")
+texture_disabled = ExtResource("2_txcll")
+texture_focused = ExtResource("2_txcll")
+texture_click_mask = ExtResource("11_uroq5")
 
-[node name="a3" type="TextureRect" parent="ColorArea"]
+[node name="a3" type="TextureButton" parent="ColorArea"]
 layout_mode = 0
 offset_left = 116.0
-offset_top = 152.0
+offset_top = 158.799
 offset_right = 226.0
-offset_bottom = 192.0
-texture = ExtResource("3_ey7t5")
+offset_bottom = 198.799
+texture_normal = ExtResource("3_ey7t5")
+texture_pressed = ExtResource("3_ey7t5")
+texture_hover = ExtResource("3_ey7t5")
+texture_disabled = ExtResource("3_ey7t5")
+texture_focused = ExtResource("3_ey7t5")
+texture_click_mask = ExtResource("13_7bhhs")
 
-[node name="a4" type="TextureRect" parent="ColorArea"]
+[node name="a4" type="TextureButton" parent="ColorArea"]
 layout_mode = 0
 offset_left = 83.0
 offset_top = 177.0
 offset_right = 251.0
 offset_bottom = 312.0
-texture = ExtResource("4_a37m1")
+texture_normal = ExtResource("4_a37m1")
+texture_pressed = ExtResource("4_a37m1")
+texture_hover = ExtResource("4_a37m1")
+texture_disabled = ExtResource("4_a37m1")
+texture_focused = ExtResource("4_a37m1")
+texture_click_mask = ExtResource("15_ggaly")
 
-[node name="a5" type="TextureRect" parent="ColorArea"]
+[node name="a5" type="TextureButton" parent="ColorArea"]
 layout_mode = 0
 offset_left = 102.0
 offset_top = 242.0
 offset_right = 234.0
 offset_bottom = 339.0
-texture = ExtResource("5_p0cum")
+texture_normal = ExtResource("5_p0cum")
+texture_pressed = ExtResource("5_p0cum")
+texture_hover = ExtResource("5_p0cum")
+texture_disabled = ExtResource("5_p0cum")
+texture_focused = ExtResource("5_p0cum")
+texture_click_mask = ExtResource("17_l4no1")
 
-[node name="a6" type="TextureRect" parent="ColorArea"]
+[node name="a6" type="TextureButton" parent="ColorArea"]
 layout_mode = 0
 offset_left = 71.0
 offset_top = 272.0
 offset_right = 266.0
 offset_bottom = 335.0
-texture = ExtResource("6_wjpfx")
+texture_normal = ExtResource("6_wjpfx")
+texture_pressed = ExtResource("6_wjpfx")
+texture_hover = ExtResource("6_wjpfx")
+texture_disabled = ExtResource("6_wjpfx")
+texture_focused = ExtResource("6_wjpfx")
+texture_click_mask = ExtResource("19_qthnn")
 
-[node name="a7" type="TextureRect" parent="ColorArea"]
+[node name="a7" type="TextureButton" parent="ColorArea"]
 layout_mode = 0
 offset_left = 255.0
 offset_top = 260.0
 offset_right = 321.0
 offset_bottom = 330.0
-texture = ExtResource("7_86eg5")
+texture_normal = ExtResource("7_86eg5")
+texture_pressed = ExtResource("7_86eg5")
+texture_hover = ExtResource("7_86eg5")
+texture_disabled = ExtResource("7_86eg5")
+texture_focused = ExtResource("7_86eg5")
+texture_click_mask = ExtResource("21_w2tcd")
 
-[node name="a8" type="TextureRect" parent="ColorArea"]
+[node name="a8" type="TextureButton" parent="ColorArea"]
 layout_mode = 0
-offset_left = 283.0
+offset_left = 286.094
 offset_top = 239.0
-offset_right = 323.0
+offset_right = 326.094
 offset_bottom = 284.0
-texture = ExtResource("8_hhrhj")
+texture_normal = ExtResource("8_hhrhj")
+texture_pressed = ExtResource("8_hhrhj")
+texture_hover = ExtResource("8_hhrhj")
+texture_disabled = ExtResource("8_hhrhj")
+texture_focused = ExtResource("8_hhrhj")
+texture_click_mask = ExtResource("23_b6a0o")
 
-[node name="Outline" type="TextureRect" parent="ColorArea"]
+[node name="Outline" type="TextureButton" parent="ColorArea"]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -137.5
+offset_left = -125.996
 offset_top = -149.5
-offset_right = 162.5
+offset_right = 174.004
 offset_bottom = 150.5
 grow_horizontal = 2
 grow_vertical = 2
-texture = ExtResource("9_yqahf")
+texture_normal = ExtResource("11_3yvdf")
+texture_pressed = ExtResource("11_3yvdf")
+texture_hover = ExtResource("11_3yvdf")
+texture_disabled = ExtResource("11_3yvdf")
+texture_focused = ExtResource("11_3yvdf")
+texture_click_mask = ExtResource("25_6q1qy")
 
 [node name="BucketsGroup" type="Control" parent="."]
 layout_mode = 1
@@ -427,6 +615,111 @@ grow_horizontal = 2
 grow_vertical = 2
 theme = ExtResource("12_goa3k")
 
+[node name="Win" type="Control" parent="."]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("33_7mhpj")
+
+[node name="TextureRect" type="TextureRect" parent="Win"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("14_5nnfu")
+
+[node name="b1" type="AnimatedSprite2D" parent="Win"]
+position = Vector2(636, 146)
+scale = Vector2(0.556, 0.556)
+sprite_frames = SubResource("SpriteFrames_y55f6")
+frame = 3
+frame_progress = 0.942616
+
+[node name="b2" type="AnimatedSprite2D" parent="Win"]
+position = Vector2(827, 192)
+rotation = 0.25861
+scale = Vector2(0.396, 0.396)
+sprite_frames = SubResource("SpriteFrames_y55f6")
+frame = 4
+frame_progress = 0.195511
+
+[node name="b3" type="AnimatedSprite2D" parent="Win"]
+position = Vector2(445, 192)
+rotation = -0.184164
+scale = Vector2(0.396, 0.396)
+sprite_frames = SubResource("SpriteFrames_y55f6")
+frame = 5
+frame_progress = 0.384208
+
+[node name="Reset" type="Button" parent="Win"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -50.5
+offset_top = 25.0
+offset_right = 50.5
+offset_bottom = 126.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("15_6xald")
+
+[node name="Back" type="Button" parent="Win"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -214.0
+offset_top = 25.0
+offset_right = -113.0
+offset_bottom = 126.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("14_v8c00")
+
+[node name="Next" type="Button" parent="Win"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 113.0
+offset_top = 25.0
+offset_right = 214.0
+offset_bottom = 126.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("58_dy2is")
+
+[node name="Label2" type="Label" parent="Win"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -218.0
+offset_top = -96.0
+offset_right = 218.0
+offset_bottom = -42.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+theme = ExtResource("17_vu16p")
+text = "Telah Menyelesaikan Level!"
+vertical_alignment = 1
+
 [node name="ExitPrompt" type="TextureRect" parent="."]
 visible = false
 layout_mode = 1
@@ -435,10 +728,10 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -328.0
-offset_top = -216.0
-offset_right = 328.0
-offset_bottom = 216.0
+offset_left = -640.0
+offset_top = -360.0
+offset_right = 640.0
+offset_bottom = 360.0
 grow_horizontal = 2
 grow_vertical = 2
 texture = ExtResource("14_5nnfu")
@@ -491,6 +784,49 @@ theme = ExtResource("17_vu16p")
 text = "Yakin untuk Keluar ?"
 vertical_alignment = 1
 
+[node name="Alert" type="TextureRect" parent="."]
+visible = false
+layout_mode = 0
+offset_right = 1280.0
+offset_bottom = 720.0
+texture = ExtResource("14_5nnfu")
+script = ExtResource("60_ifpos")
+
+[node name="Confirm2" type="Button" parent="Alert"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -68.0
+offset_top = 50.0
+offset_right = 57.0
+offset_bottom = 120.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("15_dxkea")
+
+[node name="Label3" type="Label" parent="Alert"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -281.0
+offset_top = -146.0
+offset_right = 273.0
+offset_bottom = 17.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+theme = ExtResource("17_vu16p")
+text = "Konfirmasi untuk membeli Level selanjutnya seharga Rp. 50.000 ?"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
+
 [node name="Loading" parent="." instance=ExtResource("21_ulw87")]
 visible = false
 layout_mode = 1
@@ -501,9 +837,29 @@ position = Vector2(665, 356)
 scale = Vector2(1.0375, 1.06389)
 sprite_frames = SubResource("SpriteFrames_qj1fb")
 script = ExtResource("35_iya3y")
+metadata/_edit_lock_ = true
+
+[node name="BGM" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("48_ltat7")
+volume_db = 4.685
+autoplay = true
+bus = &"SFX"
+
+[node name="Pop" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("48_v7amj")
+volume_db = 4.685
+bus = &"SFX"
 
 [connection signal="button_up" from="Back" to="." method="_on_back_button_up"]
 [connection signal="button_up" from="Reset" to="." method="_on_reset_button_up"]
+[connection signal="pressed" from="ColorArea/a1" to="ColorArea" method="_on_a_1_pressed"]
+[connection signal="pressed" from="ColorArea/a2" to="ColorArea" method="_on_a_2_pressed"]
+[connection signal="pressed" from="ColorArea/a3" to="ColorArea" method="_on_a_3_pressed"]
+[connection signal="pressed" from="ColorArea/a4" to="ColorArea" method="_on_a_4_pressed"]
+[connection signal="pressed" from="ColorArea/a5" to="ColorArea" method="_on_a_5_pressed"]
+[connection signal="pressed" from="ColorArea/a6" to="ColorArea" method="_on_a_6_pressed"]
+[connection signal="pressed" from="ColorArea/a7" to="ColorArea" method="_on_a_7_pressed"]
+[connection signal="pressed" from="ColorArea/a8" to="ColorArea" method="_on_a_8_pressed"]
 [connection signal="button_pressed" from="BucketsGroup" to="." method="_on_buckets_group_button_pressed"]
 [connection signal="pressed" from="BucketsGroup/Button" to="BucketsGroup" method="_on_button_pressed"]
 [connection signal="pressed" from="BucketsGroup/Button2" to="BucketsGroup" method="_on_button_2_pressed"]
@@ -517,6 +873,12 @@ script = ExtResource("35_iya3y")
 [connection signal="pressed" from="BucketsGroup/Button10" to="BucketsGroup" method="_on_button_10_pressed"]
 [connection signal="pressed" from="BucketsGroup/Button11" to="BucketsGroup" method="_on_button_11_pressed"]
 [connection signal="pressed" from="BucketsGroup/Button12" to="BucketsGroup" method="_on_button_12_pressed"]
+[connection signal="visibility_changed" from="Win" to="Win" method="_on_visibility_changed"]
+[connection signal="pressed" from="Win/Reset" to="Win" method="_on_reset_pressed"]
+[connection signal="pressed" from="Win/Back" to="Win" method="_on_back_pressed"]
+[connection signal="pressed" from="Win/Next" to="Win" method="_on_next_pressed"]
 [connection signal="button_up" from="ExitPrompt/Confirm" to="ExitPrompt" method="_on_confirm_button_up"]
 [connection signal="button_up" from="ExitPrompt/Cancel" to="ExitPrompt" method="_on_cancel_button_up"]
+[connection signal="pressed" from="Alert/Confirm2" to="Alert" method="_on_confirm_2_pressed"]
 [connection signal="animation_finished" from="Transition" to="Transition" method="_on_animation_finished"]
+[connection signal="finished" from="BGM" to="." method="_on_bgm_finished"]

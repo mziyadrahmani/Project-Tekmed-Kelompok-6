@@ -7,7 +7,8 @@ extends Control
 		#$AnimationPlayer.play("loading")
 
 
-func _on_animation_player_animation_finished(loading):
+func _on_animation_player_animation_finished(_loading):
+	#print(phew)
 	var target = Global.selectedLevel
 	#var transition_node = get_node("/root/Control/Transition")
 	#transition_node.play()

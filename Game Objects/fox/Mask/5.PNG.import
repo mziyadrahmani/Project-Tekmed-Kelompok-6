@@ -1,0 +1,16 @@
+[remap]
+
+importer="bitmap"
+type="BitMap"
+uid="uid://crr11ewtgc14s"
+path="res://.godot/imported/5.PNG-2c3db9965f65ee1f0a86aa178626ebdb.res"
+
+[deps]
+
+source_file="res://Game Objects/fox/Mask/5.PNG"
+dest_files=["res://.godot/imported/5.PNG-2c3db9965f65ee1f0a86aa178626ebdb.res"]
+
+[params]
+
+create_from=1
+threshold=0.5

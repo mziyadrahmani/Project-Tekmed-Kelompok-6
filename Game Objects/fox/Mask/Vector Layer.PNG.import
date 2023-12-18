@@ -1,0 +1,16 @@
+[remap]
+
+importer="bitmap"
+type="BitMap"
+uid="uid://ck711krsxubtj"
+path="res://.godot/imported/Vector Layer.PNG-129eef548011109b3d2ded156f14af0a.res"
+
+[deps]
+
+source_file="res://Game Objects/fox/Mask/Vector Layer.PNG"
+dest_files=["res://.godot/imported/Vector Layer.PNG-129eef548011109b3d2ded156f14af0a.res"]
+
+[params]
+
+create_from=1
+threshold=0.5

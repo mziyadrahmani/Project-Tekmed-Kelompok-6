@@ -1,0 +1,16 @@
+[remap]
+
+importer="bitmap"
+type="BitMap"
+uid="uid://dm3tq7yocvf4i"
+path="res://.godot/imported/IMG_3623-(1)_0004_Layer-6.png-156b6c8a18f8477f22d6555d74c57925.res"
+
+[deps]
+
+source_file="res://Game Objects/semangka/Mask/IMG_3623-(1)_0004_Layer-6.png"
+dest_files=["res://.godot/imported/IMG_3623-(1)_0004_Layer-6.png-156b6c8a18f8477f22d6555d74c57925.res"]
+
+[params]
+
+create_from=1
+threshold=0.5

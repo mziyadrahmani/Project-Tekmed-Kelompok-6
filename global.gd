@@ -2,7 +2,7 @@ extends Node
 
 var music = true
 var sfx = true
-var selectedLevel = 0
+var selectedLevel 
 var tutorial = true
 var level1ez = true
 var level2ez = false

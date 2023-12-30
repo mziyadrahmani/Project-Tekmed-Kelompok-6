@@ -1,5 +1,6 @@
-[gd_scene load_steps=6 format=3 uid="uid://deh4se38jgykr"]
+[gd_scene load_steps=7 format=3 uid="uid://deh4se38jgykr"]
 
+[ext_resource type="Script" path="res://Mainmenu/Kesulitan/Kesulitan.gd" id="1_p3cm0"]
 [ext_resource type="Theme" uid="uid://dgx0l2ofu1ds4" path="res://Mainmenu/maintheme.tres" id="2_01dnk"]
 [ext_resource type="Theme" uid="uid://obiv5qeqsjsa" path="res://UI/UI/Back Button/Back.tres" id="3_yhyf4"]
 [ext_resource type="Theme" uid="uid://dwgjjeve38bae" path="res://UI/UI/Diff Easy/Easy.tres" id="4_xuhhi"]
@@ -13,6 +14,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_p3cm0")
 
 [node name="ColorRect" type="ColorRect" parent="."]
 layout_mode = 0
@@ -53,7 +55,7 @@ grow_vertical = 2
 theme = ExtResource("3_yhyf4")
 theme_override_font_sizes/font_size = 59
 
-[node name="Button" type="Button" parent="."]
+[node name="mudah" type="Button" parent="."]
 layout_mode = 0
 offset_left = 163.0
 offset_top = 285.0
@@ -119,4 +121,4 @@ visibility_layer = 2
 layout_mode = 1
 
 [connection signal="button_up" from="Kembali" to="." method="_on_kembali_button_up"]
-[connection signal="button_up" from="Button" to="." method="_on_button_button_up"]
+[connection signal="pressed" from="mudah" to="." method="_on_mudah_pressed"]

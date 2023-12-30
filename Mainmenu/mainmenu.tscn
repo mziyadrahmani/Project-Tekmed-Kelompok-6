@@ -1,4 +1,4 @@
-[gd_scene load_steps=36 format=3 uid="uid://bp5rl2ydy7xlw"]
+[gd_scene load_steps=37 format=3 uid="uid://bp5rl2ydy7xlw"]
 
 [ext_resource type="Script" path="res://Mainmenu/mainmenu.gd" id="1_7kx3k"]
 [ext_resource type="Theme" uid="uid://dgx0l2ofu1ds4" path="res://Mainmenu/maintheme.tres" id="1_oh0t4"]
@@ -23,6 +23,7 @@
 [ext_resource type="Texture2D" uid="uid://cucry7u2hdlbv" path="res://Transition/transcat/Composition 1.00006.png" id="14_pucfn"]
 [ext_resource type="Texture2D" uid="uid://cfufsk1vklxsh" path="res://Game Objects/fox/fox.png" id="15_r5ltk"]
 [ext_resource type="Texture2D" uid="uid://bkdl2tn6hov1y" path="res://Transition/transcat/Composition 1.00007.png" id="15_xqeek"]
+[ext_resource type="Texture2D" uid="uid://2wbrmn41mdrp" path="res://Game Objects/semangka/refer.png" id="16_4xobv"]
 [ext_resource type="Texture2D" uid="uid://vg7g0gq4yoii" path="res://Transition/transcat/Composition 1.00008.png" id="16_mp6ve"]
 [ext_resource type="Texture2D" uid="uid://c8amvp7xnupto" path="res://Transition/transcat/Composition 1.00009.png" id="17_77m8f"]
 [ext_resource type="Texture2D" uid="uid://bv612fp07mc4o" path="res://Transition/transcat/Composition 1.00010.png" id="18_cjrla"]
@@ -408,6 +409,15 @@ offset_top = 337.0
 offset_right = 512.0
 offset_bottom = 637.0
 texture = ExtResource("15_r5ltk")
+
+[node name="TextureRect3" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = 461.0
+offset_top = 391.0
+offset_right = 2029.0
+offset_bottom = 1635.0
+scale = Vector2(0.115292, 0.115292)
+texture = ExtResource("16_4xobv")
 
 [node name="Move" type="AnimationPlayer" parent="."]
 libraries = {

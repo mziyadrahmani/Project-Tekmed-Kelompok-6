@@ -112,7 +112,7 @@ text = "1"
 [node name="Control2" type="Control" parent="GridContainer"]
 layout_mode = 2
 
-[node name="Button2" type="Button" parent="GridContainer/Control2"]
+[node name="Level2" type="Button" parent="GridContainer/Control2"]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -141,7 +141,7 @@ text = "2"
 [node name="Control3" type="Control" parent="GridContainer"]
 layout_mode = 2
 
-[node name="Button2" type="Button" parent="GridContainer/Control3"]
+[node name="Level3" type="Button" parent="GridContainer/Control3"]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -170,7 +170,7 @@ text = "3"
 [node name="Control4" type="Control" parent="GridContainer"]
 layout_mode = 2
 
-[node name="Button2" type="Button" parent="GridContainer/Control4"]
+[node name="Level4" type="Button" parent="GridContainer/Control4"]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -199,7 +199,7 @@ text = "4"
 [node name="Control5" type="Control" parent="GridContainer"]
 layout_mode = 2
 
-[node name="Button2" type="Button" parent="GridContainer/Control5"]
+[node name="Level5" type="Button" parent="GridContainer/Control5"]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -229,5 +229,7 @@ text = "5"
 visible = false
 layout_mode = 1
 
+[connection signal="visibility_changed" from="." to="." method="_on_visibility_changed"]
 [connection signal="button_up" from="Kembali" to="." method="_on_kembali_button_up"]
 [connection signal="button_up" from="GridContainer/Control/Level1" to="." method="_on_level_1_button_up"]
+[connection signal="pressed" from="GridContainer/Control2/Level2" to="." method="_on_button_2_pressed"]

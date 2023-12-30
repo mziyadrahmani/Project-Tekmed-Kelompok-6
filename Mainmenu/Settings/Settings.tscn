@@ -113,6 +113,7 @@ grow_vertical = 2
 theme = ExtResource("3_nv44d")
 theme_override_font_sizes/font_size = 59
 
-[connection signal="toggled" from="VBoxContainer/Label2/Music" to="." method="_on_music_toggled"]
-[connection signal="toggled" from="VBoxContainer/Label3/SFX" to="." method="_on_sfx_toggled"]
+[connection signal="visibility_changed" from="." to="." method="_on_visibility_changed"]
+[connection signal="pressed" from="VBoxContainer/Label2/Music" to="." method="_on_music_pressed"]
+[connection signal="pressed" from="VBoxContainer/Label3/SFX" to="." method="_on_sfx_pressed"]
 [connection signal="button_up" from="Kembali" to="." method="_on_kembali_button_up"]

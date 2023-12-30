@@ -1,6 +1,5 @@
-[gd_scene load_steps=7 format=3 uid="uid://deh4se38jgykr"]
+[gd_scene load_steps=6 format=3 uid="uid://deh4se38jgykr"]
 
-[ext_resource type="Script" path="res://Mainmenu/Settings/Settings.gd" id="1_w1xtr"]
 [ext_resource type="Theme" uid="uid://dgx0l2ofu1ds4" path="res://Mainmenu/maintheme.tres" id="2_01dnk"]
 [ext_resource type="Theme" uid="uid://obiv5qeqsjsa" path="res://UI/UI/Back Button/Back.tres" id="3_yhyf4"]
 [ext_resource type="Theme" uid="uid://dwgjjeve38bae" path="res://UI/UI/Diff Easy/Easy.tres" id="4_xuhhi"]
@@ -14,7 +13,6 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-script = ExtResource("1_w1xtr")
 
 [node name="ColorRect" type="ColorRect" parent="."]
 layout_mode = 0

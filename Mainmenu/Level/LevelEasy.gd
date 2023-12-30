@@ -11,7 +11,7 @@ func _on_kembali_button_up():
 
 
 func _on_level_1_button_up():
-	Global.selectedLevel = "res://Game Levels/Ez/Level1Ez.tscn"
+	Global.selectedLevel = "res://Game Levels/Ez/Level1Ez/Level1Ez.tscn"
 	var transition_node = get_node("/root/Control/Transition")
 	transition_node.play()
 	await get_tree().create_timer(0.5).timeout

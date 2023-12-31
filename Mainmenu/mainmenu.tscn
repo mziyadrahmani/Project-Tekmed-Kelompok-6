@@ -253,7 +253,6 @@ offset_left = -502.0
 offset_top = -191.0
 offset_right = 1994.0
 offset_bottom = 911.0
-color = Color(0.835294, 0.952941, 1, 1)
 
 [node name="Main" type="Control" parent="."]
 anchors_preset = 0

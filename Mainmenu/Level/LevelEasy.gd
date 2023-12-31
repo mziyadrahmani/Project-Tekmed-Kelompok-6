@@ -36,3 +36,30 @@ func _on_visibility_changed():
 
 
 
+
+
+func _on_level_3_pressed():
+	Global.selectedLevel = "res://Game Levels/Ez/Level3Ez/Level3Ez.tscn"
+	var transition_node = get_node("/root/Control/Transition")
+	transition_node.play()
+	await get_tree().create_timer(0.5).timeout
+	$Loading.visible = true
+	$Loading/AnimationPlayer.play("loading")
+
+
+func _on_level_4_pressed():
+	Global.selectedLevel = "res://Game Levels/Ez/Level4Ez/Level4Ez.tscn"
+	var transition_node = get_node("/root/Control/Transition")
+	transition_node.play()
+	await get_tree().create_timer(0.5).timeout
+	$Loading.visible = true
+	$Loading/AnimationPlayer.play("loading")
+
+
+func _on_level_5_pressed():
+	Global.selectedLevel = "res://Game Levels/Ez/Level5Ez/Level5Ez.tscn"
+	var transition_node = get_node("/root/Control/Transition")
+	transition_node.play()
+	await get_tree().create_timer(0.5).timeout
+	$Loading.visible = true
+	$Loading/AnimationPlayer.play("loading")

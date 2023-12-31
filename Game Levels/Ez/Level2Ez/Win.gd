@@ -3,13 +3,11 @@ extends Control
 
 
 func _on_next_pressed():
-	$"../Alert".visible = true
-	$"../Bruh".play()
-	#Global.selectedLevel = "res://Game Levels/Ez/Level2Ez.tscn"
-	#$"../Transition".play()
-	#await get_tree().create_timer(0.5).timeout
-	#$"../Loading".visible = true
-	#$"../Loading/AnimationPlayer".play("loading")
+	Global.selectedLevel = "res://Game Levels/Ez/Level3Ez/Level3Ez.tscn"
+	$"../Transition".play()
+	await get_tree().create_timer(0.5).timeout
+	$"../Loading".visible = true
+	$"../Loading/AnimationPlayer".play("loading")
 
 
 func _on_back_pressed():

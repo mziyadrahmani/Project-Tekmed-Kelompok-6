@@ -1,4 +1,4 @@
-[gd_scene load_steps=83 format=3 uid="uid://mcl6lrd0bg34"]
+[gd_scene load_steps=84 format=3 uid="uid://mcl6lrd0bg34"]
 
 [ext_resource type="Script" path="res://Game Levels/Ez/Level1Ez/Level1Ez.gd" id="1_g78ff"]
 [ext_resource type="Texture2D" uid="uid://cb8uwy28puu0t" path="res://Game Objects/fox/1.PNG" id="1_hpd8p"]
@@ -163,6 +163,23 @@ animations = [{
 "name": &"default",
 "speed": 12.0
 }]
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_qovuj"]
+particle_flag_disable_z = true
+emission_shape = 3
+emission_box_extents = Vector3(600, 1, 1)
+angle_min = -720.0
+angle_max = 720.0
+inherit_velocity_ratio = 0.449
+direction = Vector3(0, 1, 0)
+spread = 0.0
+initial_velocity_min = 146.06
+initial_velocity_max = 426.96
+gravity = Vector3(-1, 1, 0)
+radial_accel_min = 56.18
+radial_accel_max = 56.18
+scale_min = 0.0
+scale_max = 0.1
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_qj1fb"]
 animations = [{
@@ -740,6 +757,13 @@ text = "Selamat!
 Telah Menyelesaikan Level!"
 horizontal_alignment = 1
 vertical_alignment = 1
+
+[node name="GPUParticles2D" type="GPUParticles2D" parent="Win"]
+position = Vector2(660, 43)
+amount = 108
+process_material = SubResource("ParticleProcessMaterial_qovuj")
+texture = ExtResource("33_vnrca")
+lifetime = 2.0
 
 [node name="ExitPrompt" type="TextureRect" parent="."]
 visible = false

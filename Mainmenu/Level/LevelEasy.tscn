@@ -233,3 +233,6 @@ layout_mode = 1
 [connection signal="button_up" from="Kembali" to="." method="_on_kembali_button_up"]
 [connection signal="button_up" from="GridContainer/Control/Level1" to="." method="_on_level_1_button_up"]
 [connection signal="pressed" from="GridContainer/Control2/Level2" to="." method="_on_button_2_pressed"]
+[connection signal="pressed" from="GridContainer/Control3/Level3" to="." method="_on_level_3_pressed"]
+[connection signal="pressed" from="GridContainer/Control4/Level4" to="." method="_on_level_4_pressed"]
+[connection signal="pressed" from="GridContainer/Control5/Level5" to="." method="_on_level_5_pressed"]

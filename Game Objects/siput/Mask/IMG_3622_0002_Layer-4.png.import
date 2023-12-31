@@ -1,0 +1,16 @@
+[remap]
+
+importer="bitmap"
+type="BitMap"
+uid="uid://c3k2a5gja5xsp"
+path="res://.godot/imported/IMG_3622_0002_Layer-4.png-dd0cebc5347358850b5d1345e26fbf92.res"
+
+[deps]
+
+source_file="res://Game Objects/siput/Mask/IMG_3622_0002_Layer-4.png"
+dest_files=["res://.godot/imported/IMG_3622_0002_Layer-4.png-dd0cebc5347358850b5d1345e26fbf92.res"]
+
+[params]
+
+create_from=1
+threshold=0.5

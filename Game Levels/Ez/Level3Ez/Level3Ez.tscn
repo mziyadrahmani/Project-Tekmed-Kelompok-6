@@ -1,164 +1,162 @@
-[gd_scene load_steps=78 format=3 uid="uid://cloi3ttw2ffys"]
+[gd_scene load_steps=76 format=3 uid="uid://defavmiaims47"]
 
-[ext_resource type="Script" path="res://Game Levels/Ez/Level2Ez/Level2Ez.gd" id="1_ip731"]
-[ext_resource type="Texture2D" uid="uid://b0r8f124xc60a" path="res://UI/UI/Foreground/Foreground.PNG" id="2_6nrex"]
-[ext_resource type="Script" path="res://Game Levels/Ez/Level2Ez/Foreground.gd" id="3_ejb7g"]
-[ext_resource type="Theme" uid="uid://dgx0l2ofu1ds4" path="res://Mainmenu/maintheme.tres" id="4_xrmjl"]
-[ext_resource type="Theme" uid="uid://obiv5qeqsjsa" path="res://UI/UI/Back Button/Back.tres" id="5_5vwwo"]
-[ext_resource type="Theme" uid="uid://bn0xlgt6xyyi5" path="res://UI/UI/Restart Button/Restart.tres" id="6_l8gib"]
-[ext_resource type="Texture2D" uid="uid://2wbrmn41mdrp" path="res://Game Objects/semangka/refer.png" id="7_bru6h"]
-[ext_resource type="Script" path="res://Game Levels/Ez/Level2Ez/ColorArea.gd" id="8_pwulm"]
-[ext_resource type="Texture2D" uid="uid://c01egkn0xcu8k" path="res://Game Objects/semangka/IMG_3623-(1)_0000_Layer-2.png" id="9_2wpd5"]
-[ext_resource type="BitMap" uid="uid://dkak5hwle8ckh" path="res://Game Objects/semangka/Mask/IMG_3623-(1)_0000_Layer-2.png" id="10_stiv2"]
-[ext_resource type="Texture2D" uid="uid://dlm13fb00ukbm" path="res://Game Objects/semangka/IMG_3623-(1)_0001_Layer-3.png" id="11_igfku"]
-[ext_resource type="BitMap" uid="uid://yjqvmq70meec" path="res://Game Objects/semangka/Mask/IMG_3623-(1)_0001_Layer-3.png" id="12_v70eb"]
-[ext_resource type="Texture2D" uid="uid://n0lctig887px" path="res://Game Objects/semangka/IMG_3623-(1)_0002_Layer-4.png" id="13_1jhhk"]
-[ext_resource type="BitMap" uid="uid://ccaa7mx4a42fy" path="res://Game Objects/semangka/Mask/IMG_3623-(1)_0002_Layer-4.png" id="14_iduoh"]
-[ext_resource type="Texture2D" uid="uid://defgud2jbv4t" path="res://Game Objects/semangka/IMG_3623-(1)_0003_Layer-5.png" id="15_yef3t"]
-[ext_resource type="BitMap" uid="uid://qj0j2xfxws2r" path="res://Game Objects/semangka/Mask/IMG_3623-(1)_0003_Layer-5.png" id="16_uo0tn"]
-[ext_resource type="Texture2D" uid="uid://ukl8bqpifujc" path="res://Game Objects/semangka/IMG_3623-(1)_0004_Layer-6.png" id="17_6003l"]
-[ext_resource type="BitMap" uid="uid://dm3tq7yocvf4i" path="res://Game Objects/semangka/Mask/IMG_3623-(1)_0004_Layer-6.png" id="18_ngev6"]
-[ext_resource type="Texture2D" uid="uid://dfy184apua2m0" path="res://Game Objects/semangka/IMG_3623-(1)_0005_Layer-1.png" id="19_neprn"]
-[ext_resource type="BitMap" uid="uid://cel2mav1qb5qp" path="res://Game Objects/semangka/Mask/IMG_3623-(1)_0d005_Layer-1.png" id="20_15it2"]
-[ext_resource type="Script" path="res://Game Levels/Ez/Level2Ez/BucketsGroup.gd" id="22_dpto7"]
-[ext_resource type="Script" path="res://Game Levels/Ez/Level2Ez/Win.gd" id="24_ehowf"]
-[ext_resource type="Theme" uid="uid://cermummayjwv0" path="res://UI/UI/Paint/BucketIdle.tres" id="28_bfv1s"]
-[ext_resource type="Texture2D" uid="uid://ddhq85107srse" path="res://UI/UI/Foreground/Window.PNG" id="30_qydmm"]
-[ext_resource type="Texture2D" uid="uid://dww8tqadqy24" path="res://UI/UI/Star_Anim/frame0000.png" id="31_rgapm"]
-[ext_resource type="Texture2D" uid="uid://cro4d8ulepsfo" path="res://UI/UI/Star_Anim/frame0001.png" id="32_cwctc"]
-[ext_resource type="Texture2D" uid="uid://cseklk7p1uolc" path="res://UI/UI/Star_Anim/frame0002.png" id="33_wm7cv"]
-[ext_resource type="Texture2D" uid="uid://cjvqryqwmw7t1" path="res://UI/UI/Star_Anim/frame0003.png" id="34_m3gga"]
-[ext_resource type="Texture2D" uid="uid://dqff6muxub0gj" path="res://UI/UI/Star_Anim/frame0004.png" id="35_6xkl5"]
-[ext_resource type="Texture2D" uid="uid://dywlkou0kfiwm" path="res://UI/UI/Star_Anim/frame0005.png" id="36_dt5ws"]
-[ext_resource type="Texture2D" uid="uid://dt0ewb6gyp0fa" path="res://UI/UI/Star_Anim/frame0006.png" id="37_2i75k"]
-[ext_resource type="Texture2D" uid="uid://cg61erd3t2jj5" path="res://UI/UI/Star_Anim/frame0007.png" id="38_t3115"]
-[ext_resource type="Texture2D" uid="uid://ssxyu6qw6u5f" path="res://UI/UI/Star_Anim/frame0008.png" id="39_65o20"]
-[ext_resource type="Texture2D" uid="uid://w54ieuavonfd" path="res://UI/UI/Star_Anim/frame0009.png" id="40_sowa3"]
-[ext_resource type="Texture2D" uid="uid://bbcmo548je0ke" path="res://UI/UI/Star_Anim/frame0010.png" id="41_fioos"]
-[ext_resource type="Texture2D" uid="uid://d0qdnme1ltk85" path="res://UI/UI/Star_Anim/frame0011.png" id="42_nnhc6"]
-[ext_resource type="Texture2D" uid="uid://cex7b7x7xc7n1" path="res://UI/UI/Star_Anim/frame0012.png" id="43_7alhc"]
-[ext_resource type="Texture2D" uid="uid://clunl783ago5i" path="res://UI/UI/Star_Anim/frame0013.png" id="44_l6lb4"]
-[ext_resource type="Texture2D" uid="uid://ba3qa15vccbmq" path="res://UI/UI/Star_Anim/frame0014.png" id="45_v7rlw"]
-[ext_resource type="Texture2D" uid="uid://ckg61fnqvkxxv" path="res://UI/UI/Star_Anim/frame0015.png" id="46_i65ml"]
-[ext_resource type="Texture2D" uid="uid://bfxqyrebgw4pr" path="res://UI/UI/Star_Anim/frame0016.png" id="47_kjd7t"]
-[ext_resource type="Texture2D" uid="uid://ck5dunkgyjqko" path="res://UI/UI/Star_Anim/frame0017.png" id="48_6kmam"]
-[ext_resource type="Texture2D" uid="uid://80f08pisgg57" path="res://UI/UI/Star_Anim/frame0018.png" id="49_hao0v"]
-[ext_resource type="Texture2D" uid="uid://shc3xh3v0o7n" path="res://UI/UI/Star_Anim/frame0019.png" id="50_l1y86"]
-[ext_resource type="Texture2D" uid="uid://dg33eehgk25jk" path="res://UI/UI/Star_Anim/frame0020.png" id="51_dduiw"]
-[ext_resource type="Script" path="res://Game Levels/Ez/Level2Ez/ExitPrompt.gd" id="52_byuu5"]
-[ext_resource type="Texture2D" uid="uid://dph8mr5n04co3" path="res://UI/UI/Star_Anim/frame0021.png" id="52_jxgn8"]
-[ext_resource type="Texture2D" uid="uid://d4cb8bvyrruvy" path="res://UI/UI/Star_Anim/frame0022.png" id="53_4luwc"]
-[ext_resource type="Texture2D" uid="uid://d0rhk57wwfo71" path="res://UI/UI/Star_Anim/frame0023.png" id="54_dd861"]
-[ext_resource type="Texture2D" uid="uid://dgcxq4rofo578" path="res://UI/UI/Star_Anim/frame0024.png" id="55_ahbor"]
-[ext_resource type="Script" path="res://Game Levels/Ez/Level2Ez/Alert.gd" id="55_yg2j6"]
-[ext_resource type="Theme" uid="uid://benpa1c3s0jpd" path="res://UI/UI/Next Button/Next.tres" id="56_fw5uv"]
-[ext_resource type="Theme" uid="uid://bmpigw3efnchj" path="res://UI/UI/Ok Button/OkButton.tres" id="58_cudax"]
-[ext_resource type="Theme" uid="uid://bpkw5rj3b85v7" path="res://UI/UI/No Button/NoButton.tres" id="59_8aqj3"]
-[ext_resource type="PackedScene" uid="uid://bse8o2mkl2fu3" path="res://UI/Loading.tscn" id="61_equ1v"]
-[ext_resource type="Texture2D" uid="uid://cv7otedk6thg" path="res://UI/UI/Foreground/tutorial.png" id="62_fw6xx"]
-[ext_resource type="Texture2D" uid="uid://dibeyhhp45x4d" path="res://Transition/transcat/Composition 1.00000.png" id="63_8tv7w"]
-[ext_resource type="Texture2D" uid="uid://dmquya788bbp7" path="res://Transition/transcat/Composition 1.00001.png" id="64_02ak7"]
-[ext_resource type="Texture2D" uid="uid://umdgnct7kts4" path="res://Transition/transcat/Composition 1.00002.png" id="65_8jikh"]
-[ext_resource type="Texture2D" uid="uid://ct1qyiayh8ylv" path="res://Transition/transcat/Composition 1.00003.png" id="66_j5ntv"]
-[ext_resource type="Texture2D" uid="uid://4c2vklswanqr" path="res://Transition/transcat/Composition 1.00004.png" id="67_p5gsr"]
-[ext_resource type="Texture2D" uid="uid://deal7n378qdy1" path="res://Transition/transcat/Composition 1.00005.png" id="68_siwhj"]
-[ext_resource type="Texture2D" uid="uid://cucry7u2hdlbv" path="res://Transition/transcat/Composition 1.00006.png" id="69_ksu22"]
-[ext_resource type="Texture2D" uid="uid://bkdl2tn6hov1y" path="res://Transition/transcat/Composition 1.00007.png" id="70_e10y5"]
-[ext_resource type="Texture2D" uid="uid://vg7g0gq4yoii" path="res://Transition/transcat/Composition 1.00008.png" id="71_7115w"]
-[ext_resource type="Texture2D" uid="uid://c8amvp7xnupto" path="res://Transition/transcat/Composition 1.00009.png" id="72_jd7x6"]
-[ext_resource type="Texture2D" uid="uid://bv612fp07mc4o" path="res://Transition/transcat/Composition 1.00010.png" id="73_2egap"]
-[ext_resource type="Texture2D" uid="uid://cywcc8l5g18lc" path="res://Transition/transcat/Composition 1.00011.png" id="74_rbi4i"]
-[ext_resource type="Texture2D" uid="uid://dojojbhg3hoav" path="res://Transition/transcat/Composition 1.00012.png" id="75_dknch"]
-[ext_resource type="Script" path="res://Mainmenu/Transition.gd" id="76_v1qxw"]
-[ext_resource type="AudioStream" uid="uid://bcrsh2hmruh3e" path="res://Audio/jazzyfrenchy.mp3" id="77_1g66l"]
-[ext_resource type="AudioStream" uid="uid://cjw3ex0jgtfrb" path="res://Audio/Pop 1.ogg" id="78_whnlt"]
-[ext_resource type="AudioStream" uid="uid://kl3dll52l8cf" path="res://Audio/Win game.mp3" id="79_jibt6"]
-[ext_resource type="AudioStream" uid="uid://c15u4ocanlavv" path="res://Audio/Bruh Sound Effect #2.mp3" id="80_7idx6"]
+[ext_resource type="Script" path="res://Game Levels/Ez/Level3Ez/Level3Ez.gd" id="1_0seei"]
+[ext_resource type="Texture2D" uid="uid://b0r8f124xc60a" path="res://UI/UI/Foreground/Foreground.PNG" id="2_nqfd6"]
+[ext_resource type="Script" path="res://Game Levels/Ez/Level3Ez/Foreground.gd" id="3_ri0yp"]
+[ext_resource type="Theme" uid="uid://dgx0l2ofu1ds4" path="res://Mainmenu/maintheme.tres" id="4_xxgue"]
+[ext_resource type="Theme" uid="uid://obiv5qeqsjsa" path="res://UI/UI/Back Button/Back.tres" id="5_gskcw"]
+[ext_resource type="Theme" uid="uid://bn0xlgt6xyyi5" path="res://UI/UI/Restart Button/Restart.tres" id="6_pbwvs"]
+[ext_resource type="Texture2D" uid="uid://dybwvb3aatpn4" path="res://Game Objects/siput/refe.png" id="7_cb1h1"]
+[ext_resource type="Script" path="res://Game Levels/Ez/Level3Ez/ColorArea.gd" id="8_l1mt4"]
+[ext_resource type="Texture2D" uid="uid://bx6r0nf8n3fgq" path="res://Game Objects/siput/IMG_3622_0000_Layer-2.png" id="9_52g7n"]
+[ext_resource type="BitMap" uid="uid://bu121hpyfkkf2" path="res://Game Objects/siput/Mask/IMG_3622_0000_Layer-2.png" id="10_fsv3t"]
+[ext_resource type="Texture2D" uid="uid://7djlbxy6tu7o" path="res://Game Objects/siput/IMG_3622_0001_Layer-3.png" id="11_vc5wj"]
+[ext_resource type="BitMap" uid="uid://bxri7p6wennnt" path="res://Game Objects/siput/Mask/IMG_3622_0001_Layer-3.png" id="12_gaiqv"]
+[ext_resource type="Texture2D" uid="uid://c06idnla67vn1" path="res://Game Objects/siput/IMG_3622_0002_Layer-4.png" id="13_orpns"]
+[ext_resource type="BitMap" uid="uid://c3k2a5gja5xsp" path="res://Game Objects/siput/Mask/IMG_3622_0002_Layer-4.png" id="14_midhe"]
+[ext_resource type="Texture2D" uid="uid://b148s1nm2xcev" path="res://Game Objects/siput/IMG_3622_0003_Layer-5.png" id="15_63pxx"]
+[ext_resource type="BitMap" uid="uid://ci4sm31i14eur" path="res://Game Objects/siput/Mask/IMG_3622_0003_Layer-5.png" id="16_x4xn0"]
+[ext_resource type="Texture2D" uid="uid://bit0chpi00kw4" path="res://Game Objects/siput/IMG_3622_0004_Layer-1.png" id="17_cad85"]
+[ext_resource type="BitMap" uid="uid://bsusfipkp3qfn" path="res://Game Objects/siput/Mask/IMG_3622_0004_Layer-1.png" id="18_tn50s"]
+[ext_resource type="Script" path="res://Game Levels/Ez/Level3Ez/BucketsGroup.gd" id="21_1kl1k"]
+[ext_resource type="Theme" uid="uid://cermummayjwv0" path="res://UI/UI/Paint/BucketIdle.tres" id="22_cs8ks"]
+[ext_resource type="Script" path="res://Game Levels/Ez/Level3Ez/Win.gd" id="23_xuopc"]
+[ext_resource type="Texture2D" uid="uid://ddhq85107srse" path="res://UI/UI/Foreground/Window.PNG" id="24_p2jbb"]
+[ext_resource type="Texture2D" uid="uid://dww8tqadqy24" path="res://UI/UI/Star_Anim/frame0000.png" id="25_1cyqx"]
+[ext_resource type="Texture2D" uid="uid://cro4d8ulepsfo" path="res://UI/UI/Star_Anim/frame0001.png" id="26_e7lns"]
+[ext_resource type="Texture2D" uid="uid://cseklk7p1uolc" path="res://UI/UI/Star_Anim/frame0002.png" id="27_ecpr0"]
+[ext_resource type="Texture2D" uid="uid://cjvqryqwmw7t1" path="res://UI/UI/Star_Anim/frame0003.png" id="28_jy7r7"]
+[ext_resource type="Texture2D" uid="uid://dqff6muxub0gj" path="res://UI/UI/Star_Anim/frame0004.png" id="29_gw2b0"]
+[ext_resource type="Texture2D" uid="uid://dywlkou0kfiwm" path="res://UI/UI/Star_Anim/frame0005.png" id="30_pwclx"]
+[ext_resource type="Texture2D" uid="uid://dt0ewb6gyp0fa" path="res://UI/UI/Star_Anim/frame0006.png" id="31_f8kli"]
+[ext_resource type="Texture2D" uid="uid://cg61erd3t2jj5" path="res://UI/UI/Star_Anim/frame0007.png" id="32_emaxj"]
+[ext_resource type="Texture2D" uid="uid://ssxyu6qw6u5f" path="res://UI/UI/Star_Anim/frame0008.png" id="33_o71un"]
+[ext_resource type="Texture2D" uid="uid://w54ieuavonfd" path="res://UI/UI/Star_Anim/frame0009.png" id="34_hakqj"]
+[ext_resource type="Texture2D" uid="uid://bbcmo548je0ke" path="res://UI/UI/Star_Anim/frame0010.png" id="35_i2noj"]
+[ext_resource type="Texture2D" uid="uid://d0qdnme1ltk85" path="res://UI/UI/Star_Anim/frame0011.png" id="36_x3ga6"]
+[ext_resource type="Texture2D" uid="uid://cex7b7x7xc7n1" path="res://UI/UI/Star_Anim/frame0012.png" id="37_glt4a"]
+[ext_resource type="Texture2D" uid="uid://clunl783ago5i" path="res://UI/UI/Star_Anim/frame0013.png" id="38_08b51"]
+[ext_resource type="Texture2D" uid="uid://ba3qa15vccbmq" path="res://UI/UI/Star_Anim/frame0014.png" id="39_x3gf4"]
+[ext_resource type="Texture2D" uid="uid://ckg61fnqvkxxv" path="res://UI/UI/Star_Anim/frame0015.png" id="40_u0hqt"]
+[ext_resource type="Texture2D" uid="uid://bfxqyrebgw4pr" path="res://UI/UI/Star_Anim/frame0016.png" id="41_6rgc2"]
+[ext_resource type="Texture2D" uid="uid://ck5dunkgyjqko" path="res://UI/UI/Star_Anim/frame0017.png" id="42_nbyw6"]
+[ext_resource type="Texture2D" uid="uid://80f08pisgg57" path="res://UI/UI/Star_Anim/frame0018.png" id="43_2odec"]
+[ext_resource type="Texture2D" uid="uid://shc3xh3v0o7n" path="res://UI/UI/Star_Anim/frame0019.png" id="44_3d6u0"]
+[ext_resource type="Texture2D" uid="uid://dg33eehgk25jk" path="res://UI/UI/Star_Anim/frame0020.png" id="45_rggvt"]
+[ext_resource type="Texture2D" uid="uid://dph8mr5n04co3" path="res://UI/UI/Star_Anim/frame0021.png" id="46_d3jlb"]
+[ext_resource type="Texture2D" uid="uid://d4cb8bvyrruvy" path="res://UI/UI/Star_Anim/frame0022.png" id="47_w6klo"]
+[ext_resource type="Texture2D" uid="uid://d0rhk57wwfo71" path="res://UI/UI/Star_Anim/frame0023.png" id="48_kvbi3"]
+[ext_resource type="Texture2D" uid="uid://dgcxq4rofo578" path="res://UI/UI/Star_Anim/frame0024.png" id="49_58v2d"]
+[ext_resource type="Theme" uid="uid://benpa1c3s0jpd" path="res://UI/UI/Next Button/Next.tres" id="50_qnjgc"]
+[ext_resource type="Script" path="res://Game Levels/Ez/Level3Ez/ExitPrompt.gd" id="51_qarty"]
+[ext_resource type="Theme" uid="uid://bmpigw3efnchj" path="res://UI/UI/Ok Button/OkButton.tres" id="52_td8mr"]
+[ext_resource type="Theme" uid="uid://bpkw5rj3b85v7" path="res://UI/UI/No Button/NoButton.tres" id="53_5t35m"]
+[ext_resource type="Script" path="res://Game Levels/Ez/Level3Ez/Alert.gd" id="54_8w6qw"]
+[ext_resource type="PackedScene" uid="uid://bse8o2mkl2fu3" path="res://UI/Loading.tscn" id="55_li1fg"]
+[ext_resource type="Texture2D" uid="uid://cv7otedk6thg" path="res://UI/UI/Foreground/tutorial.png" id="56_6w2d2"]
+[ext_resource type="Texture2D" uid="uid://dibeyhhp45x4d" path="res://Transition/transcat/Composition 1.00000.png" id="57_230go"]
+[ext_resource type="Texture2D" uid="uid://dmquya788bbp7" path="res://Transition/transcat/Composition 1.00001.png" id="58_mlvyq"]
+[ext_resource type="Texture2D" uid="uid://umdgnct7kts4" path="res://Transition/transcat/Composition 1.00002.png" id="59_r587w"]
+[ext_resource type="Texture2D" uid="uid://ct1qyiayh8ylv" path="res://Transition/transcat/Composition 1.00003.png" id="60_y7ttg"]
+[ext_resource type="Texture2D" uid="uid://4c2vklswanqr" path="res://Transition/transcat/Composition 1.00004.png" id="61_xkpdv"]
+[ext_resource type="Texture2D" uid="uid://deal7n378qdy1" path="res://Transition/transcat/Composition 1.00005.png" id="62_dy8jx"]
+[ext_resource type="Texture2D" uid="uid://cucry7u2hdlbv" path="res://Transition/transcat/Composition 1.00006.png" id="63_j0ar3"]
+[ext_resource type="Texture2D" uid="uid://bkdl2tn6hov1y" path="res://Transition/transcat/Composition 1.00007.png" id="64_hl6lw"]
+[ext_resource type="Texture2D" uid="uid://vg7g0gq4yoii" path="res://Transition/transcat/Composition 1.00008.png" id="65_yg8at"]
+[ext_resource type="Texture2D" uid="uid://c8amvp7xnupto" path="res://Transition/transcat/Composition 1.00009.png" id="66_udacs"]
+[ext_resource type="Texture2D" uid="uid://bv612fp07mc4o" path="res://Transition/transcat/Composition 1.00010.png" id="67_w61rr"]
+[ext_resource type="Texture2D" uid="uid://cywcc8l5g18lc" path="res://Transition/transcat/Composition 1.00011.png" id="68_lnvwy"]
+[ext_resource type="Texture2D" uid="uid://dojojbhg3hoav" path="res://Transition/transcat/Composition 1.00012.png" id="69_kmiqt"]
+[ext_resource type="Script" path="res://Mainmenu/Transition.gd" id="70_v1qjt"]
+[ext_resource type="AudioStream" uid="uid://bcrsh2hmruh3e" path="res://Audio/jazzyfrenchy.mp3" id="71_w1gx8"]
+[ext_resource type="AudioStream" uid="uid://cjw3ex0jgtfrb" path="res://Audio/Pop 1.ogg" id="72_2worm"]
+[ext_resource type="AudioStream" uid="uid://kl3dll52l8cf" path="res://Audio/Win game.mp3" id="73_lasf3"]
+[ext_resource type="AudioStream" uid="uid://c15u4ocanlavv" path="res://Audio/Bruh Sound Effect #2.mp3" id="74_rvy44"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_y55f6"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("31_rgapm")
+"texture": ExtResource("25_1cyqx")
 }, {
 "duration": 1.0,
-"texture": ExtResource("32_cwctc")
+"texture": ExtResource("26_e7lns")
 }, {
 "duration": 1.0,
-"texture": ExtResource("33_wm7cv")
+"texture": ExtResource("27_ecpr0")
 }, {
 "duration": 1.0,
-"texture": ExtResource("34_m3gga")
+"texture": ExtResource("28_jy7r7")
 }, {
 "duration": 1.0,
-"texture": ExtResource("35_6xkl5")
+"texture": ExtResource("29_gw2b0")
 }, {
 "duration": 1.0,
-"texture": ExtResource("36_dt5ws")
+"texture": ExtResource("30_pwclx")
 }, {
 "duration": 1.0,
-"texture": ExtResource("37_2i75k")
+"texture": ExtResource("31_f8kli")
 }, {
 "duration": 1.0,
-"texture": ExtResource("38_t3115")
+"texture": ExtResource("32_emaxj")
 }, {
 "duration": 1.0,
-"texture": ExtResource("39_65o20")
+"texture": ExtResource("33_o71un")
 }, {
 "duration": 1.0,
-"texture": ExtResource("40_sowa3")
+"texture": ExtResource("34_hakqj")
 }, {
 "duration": 1.0,
-"texture": ExtResource("41_fioos")
+"texture": ExtResource("35_i2noj")
 }, {
 "duration": 1.0,
-"texture": ExtResource("42_nnhc6")
+"texture": ExtResource("36_x3ga6")
 }, {
 "duration": 1.0,
-"texture": ExtResource("43_7alhc")
+"texture": ExtResource("37_glt4a")
 }, {
 "duration": 1.0,
-"texture": ExtResource("44_l6lb4")
+"texture": ExtResource("38_08b51")
 }, {
 "duration": 1.0,
-"texture": ExtResource("45_v7rlw")
+"texture": ExtResource("39_x3gf4")
 }, {
 "duration": 1.0,
-"texture": ExtResource("46_i65ml")
+"texture": ExtResource("40_u0hqt")
 }, {
 "duration": 1.0,
-"texture": ExtResource("47_kjd7t")
+"texture": ExtResource("41_6rgc2")
 }, {
 "duration": 1.0,
-"texture": ExtResource("48_6kmam")
+"texture": ExtResource("42_nbyw6")
 }, {
 "duration": 1.0,
-"texture": ExtResource("49_hao0v")
+"texture": ExtResource("43_2odec")
 }, {
 "duration": 1.0,
-"texture": ExtResource("50_l1y86")
+"texture": ExtResource("44_3d6u0")
 }, {
 "duration": 1.0,
-"texture": ExtResource("51_dduiw")
+"texture": ExtResource("45_rggvt")
 }, {
 "duration": 1.0,
-"texture": ExtResource("52_jxgn8")
+"texture": ExtResource("46_d3jlb")
 }, {
 "duration": 1.0,
-"texture": ExtResource("53_4luwc")
+"texture": ExtResource("47_w6klo")
 }, {
 "duration": 1.0,
-"texture": ExtResource("54_dd861")
+"texture": ExtResource("48_kvbi3")
 }, {
 "duration": 1.0,
-"texture": ExtResource("55_ahbor")
+"texture": ExtResource("49_58v2d")
 }],
 "loop": true,
 "name": &"default",
 "speed": 12.0
 }]
 
-[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_nvjso"]
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_a4k01"]
 particle_flag_disable_z = true
 emission_shape = 3
 emission_box_extents = Vector3(600, 1, 1)
@@ -179,57 +177,57 @@ scale_max = 0.1
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("63_8tv7w")
+"texture": ExtResource("57_230go")
 }, {
 "duration": 1.0,
-"texture": ExtResource("64_02ak7")
+"texture": ExtResource("58_mlvyq")
 }, {
 "duration": 1.0,
-"texture": ExtResource("65_8jikh")
+"texture": ExtResource("59_r587w")
 }, {
 "duration": 1.0,
-"texture": ExtResource("66_j5ntv")
+"texture": ExtResource("60_y7ttg")
 }, {
 "duration": 1.0,
-"texture": ExtResource("67_p5gsr")
+"texture": ExtResource("61_xkpdv")
 }, {
 "duration": 1.0,
-"texture": ExtResource("68_siwhj")
+"texture": ExtResource("62_dy8jx")
 }, {
 "duration": 1.0,
-"texture": ExtResource("69_ksu22")
+"texture": ExtResource("63_j0ar3")
 }, {
 "duration": 1.0,
-"texture": ExtResource("70_e10y5")
+"texture": ExtResource("64_hl6lw")
 }, {
 "duration": 1.0,
-"texture": ExtResource("71_7115w")
+"texture": ExtResource("65_yg8at")
 }, {
 "duration": 1.0,
-"texture": ExtResource("72_jd7x6")
+"texture": ExtResource("66_udacs")
 }, {
 "duration": 1.0,
-"texture": ExtResource("73_2egap")
+"texture": ExtResource("67_w61rr")
 }, {
 "duration": 1.0,
-"texture": ExtResource("74_rbi4i")
+"texture": ExtResource("68_lnvwy")
 }, {
 "duration": 1.0,
-"texture": ExtResource("75_dknch")
+"texture": ExtResource("69_kmiqt")
 }],
 "loop": false,
 "name": &"default",
 "speed": 12.0
 }]
 
-[node name="Level2Ez" type="Control"]
+[node name="Level3Ez" type="Control"]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-script = ExtResource("1_ip731")
+script = ExtResource("1_0seei")
 metadata/_edit_lock_ = true
 
 [node name="ColorRect" type="ColorRect" parent="."]
@@ -238,7 +236,7 @@ offset_left = -462.0
 offset_top = -168.0
 offset_right = 2034.0
 offset_bottom = 934.0
-color = Color(0.686275, 0.929412, 0.882353, 1)
+color = Color(0.792157, 0.890196, 0.945098, 1)
 metadata/_edit_lock_ = true
 
 [node name="Foreground" type="TextureRect" parent="."]
@@ -250,8 +248,8 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-texture = ExtResource("2_6nrex")
-script = ExtResource("3_ejb7g")
+texture = ExtResource("2_nqfd6")
+script = ExtResource("3_ri0yp")
 metadata/_edit_lock_ = true
 
 [node name="Label3" type="Label" parent="."]
@@ -267,9 +265,9 @@ offset_right = 163.0
 offset_bottom = -269.0
 grow_horizontal = 2
 grow_vertical = 2
-theme = ExtResource("4_xrmjl")
+theme = ExtResource("4_xxgue")
 theme_override_font_sizes/font_size = 71
-text = "LEVEL 2 - SEMANGKA"
+text = "LEVEL 3 - siput"
 horizontal_alignment = 1
 vertical_alignment = 1
 
@@ -279,7 +277,7 @@ offset_left = 17.0
 offset_top = 15.0
 offset_right = 99.0
 offset_bottom = 85.0
-theme = ExtResource("5_5vwwo")
+theme = ExtResource("5_gskcw")
 
 [node name="Reset" type="Button" parent="."]
 layout_mode = 1
@@ -294,7 +292,7 @@ offset_right = 632.0
 offset_bottom = -269.0
 grow_horizontal = 2
 grow_vertical = 2
-theme = ExtResource("6_l8gib")
+theme = ExtResource("6_pbwvs")
 
 [node name="Reference" type="TextureRect" parent="."]
 layout_mode = 1
@@ -303,14 +301,14 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = 406.0
-offset_top = -155.0
-offset_right = 1974.0
-offset_bottom = 1089.0
+offset_left = 407.0
+offset_top = -188.0
+offset_right = 2807.0
+offset_bottom = 2604.0
 grow_horizontal = 2
 grow_vertical = 2
-scale = Vector2(0.110324, 0.110324)
-texture = ExtResource("7_bru6h")
+scale = Vector2(0.0608086, 0.0608086)
+texture = ExtResource("7_cb1h1")
 
 [node name="ColorArea" type="Control" parent="."]
 layout_mode = 1
@@ -319,81 +317,95 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -436.0
-offset_top = -699.0
-offset_right = 1208.0
-offset_bottom = 809.0
+offset_left = -839.0
+offset_top = -1312.5
+offset_right = 1605.0
+offset_bottom = 1312.5
 grow_horizontal = 2
 grow_vertical = 2
-scale = Vector2(0.248267, 0.248267)
-pivot_offset = Vector2(682.733, 761.278)
-script = ExtResource("8_pwulm")
+scale = Vector2(0.142379, 0.142379)
+pivot_offset = Vector2(1110.77, 1330.11)
+script = ExtResource("8_l1mt4")
 
 [node name="a1" type="TextureButton" parent="ColorArea"]
-layout_mode = 0
-offset_left = 102.857
-offset_top = 39.5943
-offset_right = 1370.86
-offset_bottom = 1114.59
-texture_normal = ExtResource("9_2wpd5")
-texture_pressed = ExtResource("9_2wpd5")
-texture_hover = ExtResource("9_2wpd5")
-texture_disabled = ExtResource("9_2wpd5")
-texture_focused = ExtResource("9_2wpd5")
-texture_click_mask = ExtResource("10_stiv2")
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -939.748
+offset_top = -1226.39
+offset_right = 328.255
+offset_bottom = -151.39
+grow_horizontal = 2
+grow_vertical = 2
+texture_normal = ExtResource("9_52g7n")
+texture_pressed = ExtResource("9_52g7n")
+texture_hover = ExtResource("9_52g7n")
+texture_disabled = ExtResource("9_52g7n")
+texture_focused = ExtResource("9_52g7n")
+texture_click_mask = ExtResource("10_fsv3t")
 
 [node name="a2" type="TextureButton" parent="ColorArea"]
-layout_mode = 0
-offset_left = 857.461
-offset_top = 29.1373
-offset_right = 1509.46
-offset_bottom = 812.137
-scale = Vector2(1.00638, 1.00638)
-texture_normal = ExtResource("11_igfku")
-texture_pressed = ExtResource("11_igfku")
-texture_hover = ExtResource("11_igfku")
-texture_disabled = ExtResource("11_igfku")
-texture_focused = ExtResource("11_igfku")
-texture_click_mask = ExtResource("12_v70eb")
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -134.163
+offset_top = -489.276
+offset_right = 1051.84
+offset_bottom = 602.724
+grow_horizontal = 2
+grow_vertical = 2
+texture_normal = ExtResource("11_vc5wj")
+texture_pressed = ExtResource("11_vc5wj")
+texture_hover = ExtResource("11_vc5wj")
+texture_disabled = ExtResource("11_vc5wj")
+texture_focused = ExtResource("11_vc5wj")
+texture_click_mask = ExtResource("12_gaiqv")
 
 [node name="a3" type="TextureButton" parent="ColorArea"]
-layout_mode = 0
-offset_left = 1402.18
-offset_top = 818.157
-offset_right = 1568.18
-offset_bottom = 897.157
-texture_normal = ExtResource("13_1jhhk")
-texture_pressed = ExtResource("13_1jhhk")
-texture_hover = ExtResource("13_1jhhk")
-texture_disabled = ExtResource("13_1jhhk")
-texture_focused = ExtResource("13_1jhhk")
-texture_click_mask = ExtResource("14_iduoh")
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -259.029
+offset_top = -505.388
+offset_right = 1048.97
+offset_bottom = 962.612
+grow_horizontal = 2
+grow_vertical = 2
+texture_normal = ExtResource("13_orpns")
+texture_pressed = ExtResource("13_orpns")
+texture_hover = ExtResource("13_orpns")
+texture_disabled = ExtResource("13_orpns")
+texture_focused = ExtResource("13_orpns")
+texture_click_mask = ExtResource("14_midhe")
 
 [node name="a4" type="TextureButton" parent="ColorArea"]
-layout_mode = 0
-offset_left = 516.247
-offset_top = 906.879
-offset_right = 1551.25
-offset_bottom = 1249.88
-texture_normal = ExtResource("15_yef3t")
-texture_pressed = ExtResource("15_yef3t")
-texture_hover = ExtResource("15_yef3t")
-texture_disabled = ExtResource("15_yef3t")
-texture_focused = ExtResource("15_yef3t")
-texture_click_mask = ExtResource("16_uo0tn")
-
-[node name="a5" type="TextureButton" parent="ColorArea"]
-layout_mode = 0
-offset_left = 51.4239
-offset_top = 836.159
-offset_right = 1412.42
-offset_bottom = 1190.16
-texture_normal = ExtResource("17_6003l")
-texture_pressed = ExtResource("17_6003l")
-texture_hover = ExtResource("17_6003l")
-texture_disabled = ExtResource("17_6003l")
-texture_focused = ExtResource("17_6003l")
-texture_click_mask = ExtResource("18_ngev6")
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -1092.81
+offset_top = -634.281
+offset_right = 723.191
+offset_bottom = 1245.72
+grow_horizontal = 2
+grow_vertical = 2
+texture_normal = ExtResource("15_63pxx")
+texture_pressed = ExtResource("15_63pxx")
+texture_hover = ExtResource("15_63pxx")
+texture_disabled = ExtResource("15_63pxx")
+texture_focused = ExtResource("15_63pxx")
+texture_click_mask = ExtResource("16_x4xn0")
 
 [node name="Outline" type="TextureButton" parent="ColorArea"]
 layout_mode = 1
@@ -402,18 +414,18 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -795.179
-offset_top = -734.979
-offset_right = 772.821
-offset_bottom = 509.021
+offset_left = -1200.0
+offset_top = -1396.0
+offset_right = 1200.0
+offset_bottom = 1396.0
 grow_horizontal = 2
 grow_vertical = 2
-texture_normal = ExtResource("19_neprn")
-texture_pressed = ExtResource("19_neprn")
-texture_hover = ExtResource("19_neprn")
-texture_disabled = ExtResource("19_neprn")
-texture_focused = ExtResource("19_neprn")
-texture_click_mask = ExtResource("20_15it2")
+texture_normal = ExtResource("17_cad85")
+texture_pressed = ExtResource("17_cad85")
+texture_hover = ExtResource("17_cad85")
+texture_disabled = ExtResource("17_cad85")
+texture_focused = ExtResource("17_cad85")
+texture_click_mask = ExtResource("18_tn50s")
 
 [node name="Status" type="Label" parent="ColorArea"]
 layout_mode = 1
@@ -422,15 +434,15 @@ anchor_left = 0.496
 anchor_top = 0.948
 anchor_right = 0.496
 anchor_bottom = 0.948
-offset_left = -127.588
-offset_top = -109.543
-offset_right = -68.5883
-offset_bottom = -45.5435
+offset_left = -163.04
+offset_top = 96.1609
+offset_right = -39.04
+offset_bottom = 227.161
 grow_horizontal = 2
 grow_vertical = 2
 scale = Vector2(3.9851, 3.9851)
-theme = ExtResource("4_xrmjl")
-theme_override_font_sizes/font_size = 41
+theme = ExtResource("4_xxgue")
+theme_override_font_sizes/font_size = 111
 
 [node name="BucketsGroup" type="Control" parent="."]
 layout_mode = 1
@@ -445,10 +457,10 @@ offset_bottom = 391.0
 grow_horizontal = 2
 grow_vertical = 2
 scale = Vector2(0.806661, 0.806661)
-script = ExtResource("22_dpto7")
+script = ExtResource("21_1kl1k")
 
 [node name="Button" type="Button" parent="BucketsGroup"]
-modulate = Color(1, 0.662745, 0.207843, 1)
+modulate = Color(0.866667, 0.545098, 0.282353, 1)
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -457,7 +469,7 @@ offset_right = -520.025
 offset_bottom = -429.0
 grow_horizontal = 2
 grow_vertical = 2
-theme = ExtResource("28_bfv1s")
+theme = ExtResource("22_cs8ks")
 theme_type_variation = &"FlatButton"
 
 [node name="Button2" type="Button" parent="BucketsGroup"]
@@ -471,10 +483,10 @@ offset_right = -339.032
 offset_bottom = -429.0
 grow_horizontal = 2
 grow_vertical = 2
-theme = ExtResource("28_bfv1s")
+theme = ExtResource("22_cs8ks")
 
 [node name="Button3" type="Button" parent="BucketsGroup"]
-modulate = Color(0.631373, 0.658824, 0.447059, 1)
+modulate = Color(1, 0.388235, 0.603922, 1)
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -484,7 +496,7 @@ offset_right = -151.841
 offset_bottom = -429.0
 grow_horizontal = 2
 grow_vertical = 2
-theme = ExtResource("28_bfv1s")
+theme = ExtResource("22_cs8ks")
 
 [node name="Button4" type="Button" parent="BucketsGroup"]
 modulate = Color(0, 0.941176, 0.745098, 1)
@@ -497,7 +509,7 @@ offset_right = 36.5905
 offset_bottom = -429.0
 grow_horizontal = 2
 grow_vertical = 2
-theme = ExtResource("28_bfv1s")
+theme = ExtResource("22_cs8ks")
 
 [node name="Button5" type="Button" parent="BucketsGroup"]
 modulate = Color(0.937255, 0.447059, 0.396078, 1)
@@ -510,10 +522,10 @@ offset_right = -520.025
 offset_bottom = -241.809
 grow_horizontal = 2
 grow_vertical = 2
-theme = ExtResource("28_bfv1s")
+theme = ExtResource("22_cs8ks")
 
 [node name="Button6" type="Button" parent="BucketsGroup"]
-modulate = Color(0.635294, 0.635294, 0.635294, 1)
+modulate = Color(0.733333, 0.866667, 0.545098, 1)
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -524,10 +536,10 @@ offset_right = -339.032
 offset_bottom = -238.09
 grow_horizontal = 2
 grow_vertical = 2
-theme = ExtResource("28_bfv1s")
+theme = ExtResource("22_cs8ks")
 
 [node name="Button7" type="Button" parent="BucketsGroup"]
-modulate = Color(1, 0.188235, 1, 1)
+modulate = Color(0.894118, 0.788235, 0.505882, 1)
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -538,7 +550,7 @@ offset_right = -151.841
 offset_bottom = -235.61
 grow_horizontal = 2
 grow_vertical = 2
-theme = ExtResource("28_bfv1s")
+theme = ExtResource("22_cs8ks")
 
 [node name="Button8" type="Button" parent="BucketsGroup"]
 modulate = Color(0.784314, 0.298039, 0.247059, 1)
@@ -552,7 +564,7 @@ offset_right = 39.0698
 offset_bottom = -238.09
 grow_horizontal = 2
 grow_vertical = 2
-theme = ExtResource("28_bfv1s")
+theme = ExtResource("22_cs8ks")
 
 [node name="Button9" type="Button" parent="BucketsGroup"]
 modulate = Color(0.823529, 0.713726, 0.960784, 1)
@@ -565,10 +577,10 @@ offset_right = -520.025
 offset_bottom = -36.022
 grow_horizontal = 2
 grow_vertical = 2
-theme = ExtResource("28_bfv1s")
+theme = ExtResource("22_cs8ks")
 
 [node name="Button10" type="Button" parent="BucketsGroup"]
-modulate = Color(0.776471, 0.8, 0.631373, 1)
+modulate = Color(0, 0.435294, 0.403922, 1)
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -579,7 +591,7 @@ offset_right = -336.553
 offset_bottom = -36.022
 grow_horizontal = 2
 grow_vertical = 2
-theme = ExtResource("28_bfv1s")
+theme = ExtResource("22_cs8ks")
 
 [node name="Button11" type="Button" parent="BucketsGroup"]
 modulate = Color(0.360784, 0.611765, 0.341176, 1)
@@ -593,7 +605,7 @@ offset_right = -151.841
 offset_bottom = -36.022
 grow_horizontal = 2
 grow_vertical = 2
-theme = ExtResource("28_bfv1s")
+theme = ExtResource("22_cs8ks")
 
 [node name="Button12" type="Button" parent="BucketsGroup"]
 modulate = Color(0.458824, 0.87451, 0.980392, 1)
@@ -607,7 +619,7 @@ offset_right = 35.3508
 offset_bottom = -36.022
 grow_horizontal = 2
 grow_vertical = 2
-theme = ExtResource("28_bfv1s")
+theme = ExtResource("22_cs8ks")
 
 [node name="Win" type="Control" parent="."]
 visible = false
@@ -617,7 +629,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-script = ExtResource("24_ehowf")
+script = ExtResource("23_xuopc")
 
 [node name="TextureRect" type="TextureRect" parent="Win"]
 layout_mode = 1
@@ -626,7 +638,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-texture = ExtResource("30_qydmm")
+texture = ExtResource("24_p2jbb")
 
 [node name="b1" type="AnimatedSprite2D" parent="Win"]
 position = Vector2(636, 146)
@@ -664,7 +676,7 @@ offset_right = 50.5
 offset_bottom = 126.0
 grow_horizontal = 2
 grow_vertical = 2
-theme = ExtResource("6_l8gib")
+theme = ExtResource("6_pbwvs")
 
 [node name="Back" type="Button" parent="Win"]
 layout_mode = 1
@@ -679,7 +691,7 @@ offset_right = -113.0
 offset_bottom = 126.0
 grow_horizontal = 2
 grow_vertical = 2
-theme = ExtResource("5_5vwwo")
+theme = ExtResource("5_gskcw")
 
 [node name="Next" type="Button" parent="Win"]
 layout_mode = 1
@@ -694,7 +706,7 @@ offset_right = 214.0
 offset_bottom = 126.0
 grow_horizontal = 2
 grow_vertical = 2
-theme = ExtResource("56_fw5uv")
+theme = ExtResource("50_qnjgc")
 
 [node name="Label2" type="Label" parent="Win"]
 layout_mode = 1
@@ -710,7 +722,7 @@ offset_bottom = -2.0
 grow_horizontal = 2
 grow_vertical = 2
 size_flags_horizontal = 4
-theme = ExtResource("4_xrmjl")
+theme = ExtResource("4_xxgue")
 text = "Selamat!
 Telah Menyelesaikan Level!"
 horizontal_alignment = 1
@@ -719,8 +731,8 @@ vertical_alignment = 1
 [node name="GPUParticles2D" type="GPUParticles2D" parent="Win"]
 position = Vector2(660, 43)
 amount = 108
-process_material = SubResource("ParticleProcessMaterial_nvjso")
-texture = ExtResource("31_rgapm")
+process_material = SubResource("ParticleProcessMaterial_a4k01")
+texture = ExtResource("25_1cyqx")
 lifetime = 2.0
 
 [node name="ExitPrompt" type="TextureRect" parent="."]
@@ -737,8 +749,8 @@ offset_right = 640.0
 offset_bottom = 360.0
 grow_horizontal = 2
 grow_vertical = 2
-texture = ExtResource("30_qydmm")
-script = ExtResource("52_byuu5")
+texture = ExtResource("24_p2jbb")
+script = ExtResource("51_qarty")
 
 [node name="Confirm" type="Button" parent="ExitPrompt"]
 layout_mode = 1
@@ -753,7 +765,7 @@ offset_right = 214.0
 offset_bottom = 120.0
 grow_horizontal = 2
 grow_vertical = 2
-theme = ExtResource("58_cudax")
+theme = ExtResource("52_td8mr")
 
 [node name="Cancel" type="Button" parent="ExitPrompt"]
 layout_mode = 1
@@ -768,7 +780,7 @@ offset_right = -74.0
 offset_bottom = 121.0
 grow_horizontal = 2
 grow_vertical = 2
-theme = ExtResource("59_8aqj3")
+theme = ExtResource("53_5t35m")
 
 [node name="Label2" type="Label" parent="ExitPrompt"]
 layout_mode = 1
@@ -783,7 +795,7 @@ offset_right = 163.0
 offset_bottom = -28.0
 grow_horizontal = 2
 grow_vertical = 2
-theme = ExtResource("4_xrmjl")
+theme = ExtResource("4_xxgue")
 text = "Yakin untuk Keluar ?"
 vertical_alignment = 1
 
@@ -792,8 +804,8 @@ visible = false
 layout_mode = 0
 offset_right = 1280.0
 offset_bottom = 720.0
-texture = ExtResource("30_qydmm")
-script = ExtResource("55_yg2j6")
+texture = ExtResource("24_p2jbb")
+script = ExtResource("54_8w6qw")
 
 [node name="Confirm2" type="Button" parent="Alert"]
 layout_mode = 1
@@ -808,7 +820,7 @@ offset_right = 57.0
 offset_bottom = 120.0
 grow_horizontal = 2
 grow_vertical = 2
-theme = ExtResource("58_cudax")
+theme = ExtResource("52_td8mr")
 
 [node name="Label3" type="Label" parent="Alert"]
 layout_mode = 1
@@ -824,13 +836,13 @@ offset_bottom = 17.0
 grow_horizontal = 2
 grow_vertical = 2
 size_flags_horizontal = 4
-theme = ExtResource("4_xrmjl")
+theme = ExtResource("4_xxgue")
 text = "Konfirmasi untuk membeli Level selanjutnya seharga Rp. 50.000 ?"
 horizontal_alignment = 1
 vertical_alignment = 1
 autowrap_mode = 2
 
-[node name="Loading" parent="." instance=ExtResource("61_equ1v")]
+[node name="Loading" parent="." instance=ExtResource("55_li1fg")]
 visible = false
 layout_mode = 1
 
@@ -839,7 +851,7 @@ visible = false
 layout_mode = 0
 offset_right = 40.0
 offset_bottom = 40.0
-texture = ExtResource("62_fw6xx")
+texture = ExtResource("56_6w2d2")
 metadata/_edit_lock_ = true
 
 [node name="Transition" type="AnimatedSprite2D" parent="."]
@@ -847,27 +859,27 @@ top_level = true
 position = Vector2(665, 356)
 scale = Vector2(1.0375, 1.06389)
 sprite_frames = SubResource("SpriteFrames_qj1fb")
-script = ExtResource("76_v1qxw")
+script = ExtResource("70_v1qjt")
 metadata/_edit_lock_ = true
 
 [node name="BGM" type="AudioStreamPlayer" parent="."]
-stream = ExtResource("77_1g66l")
+stream = ExtResource("71_w1gx8")
 volume_db = 4.685
 autoplay = true
 bus = &"SFX"
 
 [node name="Pop" type="AudioStreamPlayer" parent="."]
-stream = ExtResource("78_whnlt")
+stream = ExtResource("72_2worm")
 volume_db = 4.685
 bus = &"SFX"
 
 [node name="WinSfx" type="AudioStreamPlayer" parent="."]
-stream = ExtResource("79_jibt6")
+stream = ExtResource("73_lasf3")
 volume_db = 4.685
 bus = &"SFX"
 
 [node name="Bruh" type="AudioStreamPlayer" parent="."]
-stream = ExtResource("80_7idx6")
+stream = ExtResource("74_rvy44")
 volume_db = 4.685
 bus = &"SFX"
 
@@ -877,7 +889,6 @@ bus = &"SFX"
 [connection signal="pressed" from="ColorArea/a2" to="ColorArea" method="_on_a_2_pressed"]
 [connection signal="pressed" from="ColorArea/a3" to="ColorArea" method="_on_a_3_pressed"]
 [connection signal="pressed" from="ColorArea/a4" to="ColorArea" method="_on_a_4_pressed"]
-[connection signal="pressed" from="ColorArea/a5" to="ColorArea" method="_on_a_5_pressed"]
 [connection signal="button_pressed" from="BucketsGroup" to="." method="_on_buckets_group_button_pressed"]
 [connection signal="pressed" from="BucketsGroup/Button" to="BucketsGroup" method="_on_button_pressed"]
 [connection signal="pressed" from="BucketsGroup/Button2" to="BucketsGroup" method="_on_button_2_pressed"]

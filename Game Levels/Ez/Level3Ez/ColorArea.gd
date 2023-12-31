@@ -15,8 +15,8 @@ func checkWinCondition():
 		await get_tree().create_timer(0.5).timeout
 		$"../Win".visible = true
 		$"../WinSfx".play()
-		Global.level4ez = true
-		Global.save()
+		#Global.level4ez = true
+		#Global.save()
 		
 		
 func update_status():
